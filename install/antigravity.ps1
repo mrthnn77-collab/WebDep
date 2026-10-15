@@ -62,4 +62,8 @@ if (Test-Path $promaxDir) {
     }
 }
 
+# 11. Skiper UI Un-common Components
+Copy-Item -Recurse -Force "$libraryRoot\skills\skiper-ui" "$targetDir\skiper-ui"
+Write-Host "  + [skiper-ui] Un-common components (carousels, smooth caret, progressive blur, squircle)" -ForegroundColor Cyan
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

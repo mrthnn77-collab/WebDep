@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
@@ -90,6 +90,14 @@
       "path": "skills/generative-art",
       "description": "Canvas, particle systems, fluid simulations",
       "tags": ["generative", "canvas", "particles", "fluid", "art"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "skiper-ui",
+      "name": "Skiper UI Un-common Components Suite",
+      "path": "skills/skiper-ui",
+      "description": "Un-common, micro-interaction-driven React & Next.js components for shadcn/ui, Tailwind CSS, Framer Motion, and GSAP. 37+ registry components including perspective carousels, smooth caret inputs, progressive blur, Apple squircles, and card swipe stacks",
+      "tags": ["skiper-ui", "shadcn", "micro-interactions", "uncommon-components", "framer-motion", "gsap", "springs", "canvas-caret"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]

@@ -18,6 +18,7 @@
 | **Motion & Creative Engine** | `skills/creative-engine` | **Genjutsu**: 60fps animations, GSAP timelines, Framer Motion, Tells (anti-AI slop) |
 | **3D & Shaders** | `skills/3d-webgl` | Three.js, R3F, WebGPU/TSL, custom shaders |
 | **Generative Art** | `skills/generative-art` | Canvas, particle physics, organic fluid simulations |
+| **Skiper UI Uncommon Components** | `skills/skiper-ui` | **Skiper UI (`skiper-ui.com`)**: 37+ un-common craft components for shadcn/ui & Tailwind. Perspective 3D carousels, smooth caret inputs (canvas physics), progressive blur, Apple squircles, liquid gooey, card swipe stacks |
 
 ---
 
