@@ -1,12 +1,13 @@
 # 🧠 murathan-skills
 
-> Universal skill library for web design, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
+> Universal skill library for web design, motion principles, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
 > Works with **Antigravity**, **Cursor**, and **OpenAI Codex**.
 
 ## 📦 Skills Architecture
 
 | Category | Source / Suite | Highlights & Included Skills |
 |---|---|---|
+| **Design Motion Principles** | `skills/motion-principles` | **kylezantos/design-motion-principles**: Distilled from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Create mode (purposeful interaction), Audit mode (anti-slop, motion gap analysis, HTML report with live looping demos) |
 | **Awesome Claude Design** | `skills/claude-design` | **Aesthetic Families & Hybrid Brand Remixes**: Stripe × A24, Linear × Claude, Mercury × Linear, Vercel × Pitchfork, plus 20-min landing page and 3D shader recipes |
 | **UI/UX Pro Max** | `skills/ui-ux-pro-max` | **Official nextlevelbuilder/ui-ux-pro-max-skill**: Full search engine, reasoning contract, Phosphor icon manifest, Google Font licenses, 22+ stack data sets, `ui-styling`, `banner-design`, `brand`, `design-system` |
 | **Design Systems** | `skills/design-systems` | Exact tokens from **80+ world brands** (Stripe, Apple, Vercel, Linear, Supabase, Ferrari…) |

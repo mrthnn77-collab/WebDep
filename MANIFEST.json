@@ -1,9 +1,17 @@
 {
   "name": "murathan-skills",
-  "version": "1.4.0",
-  "description": "Universal skill library for web design, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art",
+  "version": "1.5.0",
+  "description": "Universal skill library for web design, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
+    {
+      "id": "motion-principles",
+      "name": "Design Motion Principles (kylezantos)",
+      "path": "skills/motion-principles",
+      "description": "Motion & interaction design engine distilled from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Includes Create and Audit modes, motion gap analysis, anti-AI-slop quality gate, and live HTML demo reports",
+      "tags": ["motion", "animation", "emil-kowalski", "framer-motion", "micro-interactions", "audit"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
     {
       "id": "claude-design",
       "name": "Awesome Claude Design & Remixes",
