@@ -21,6 +21,7 @@
 | **Skiper UI Uncommon Components** | `skills/skiper-ui` | **Skiper UI (`skiper-ui.com`)**: 37+ un-common craft components for shadcn/ui & Tailwind. Perspective 3D carousels, smooth caret inputs (canvas physics), progressive blur, Apple squircles, liquid gooey, card swipe stacks |
 | **Watermelon UI Platform Suite** | `skills/watermelon-ui` | **Watermelon UI (`ui.watermelon.sh`)**: 1000+ open-source components, 29 production dashboards (ERP, Web3, E-commerce, Invoicing), audio/waveform scrubbers, voice transcription cards, bento blocks, and native hosted MCP server (`mcp.watermelon.sh/mcp`) |
 | **StyleUI Handmade Templates** | `skills/style-ui` | **StyleUI (`styleui.dev`)**: Handcrafted templates (Notio AI Voice, Axis Minimal SaaS) and modular blocks built on React 19, Next.js 16, Tailwind CSS 4, Motion, and Base UI primitives |
+| **Analog UI Studio Hyper-Skeuomorphism** | `skills/analog-ui` | **Analog UI (`analogui.com` / TechSquidTV)**: Studio Hyper-Skeuomorphic hardware controls. Dynamic physical lighting engine (`useAnalogLighting`), machined aluminium dials, linear faders, VU needle meters, LED bar meters, rocker switches, rotary selectors, and rack mount panels |
 
 ---
 

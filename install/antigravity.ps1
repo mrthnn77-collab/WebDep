@@ -74,4 +74,8 @@ Write-Host "  + [watermelon-ui] Full-stack suite (29 dashboards, audio waveforms
 Copy-Item -Recurse -Force "$libraryRoot\skills\style-ui" "$targetDir\style-ui"
 Write-Host "  + [style-ui] Handmade templates (React 19, Next 16, Tailwind v4, Base UI)" -ForegroundColor Yellow
 
+# 14. Analog UI Studio Hyper-Skeuomorphism Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\analog-ui" "$targetDir\analog-ui"
+Write-Host "  + [analog-ui] Studio Hyper-Skeuomorphic hardware controls (dials, faders, meters, lighting engine)" -ForegroundColor Green
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

@@ -1,7 +1,7 @@
 {
   "name": "murathan-skills",
-  "version": "1.10.0",
-  "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
+  "version": "1.11.0",
+  "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
     {
@@ -114,6 +114,14 @@
       "path": "skills/style-ui",
       "description": "Handmade, modern landing page templates (Notio AI Voice, Axis SaaS) and modular blocks built on React 19, Next.js 16, Tailwind CSS 4, Motion, and Base UI primitives by Ras Mic & Fabrika team",
       "tags": ["style-ui", "templates", "react-19", "nextjs-16", "tailwind-v4", "base-ui", "notio", "axis", "falling-pattern", "orbs"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "analog-ui",
+      "name": "Analog UI Studio Hyper-Skeuomorphism Suite",
+      "path": "skills/analog-ui",
+      "description": "Studio Hyper-Skeuomorphic tactile & mechanical hardware controls by TechSquidTV. Dynamic physical lighting engine (useAnalogLighting), machined aluminium dials, studio faders, VU needle meters, LED bar meters, rocker switches, rotary selectors, and hardware chassis panels",
+      "tags": ["analog-ui", "skeuomorphism", "mechanical", "hardware-ui", "lighting-engine", "dials", "faders", "vu-meters", "rocker-switches"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]
