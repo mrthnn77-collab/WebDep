@@ -16,13 +16,23 @@ Copy-Item -Recurse -Force "$libraryRoot\skills\creative-engine" "$targetDir\genj
 # 3. 3D WebGL
 Copy-Item -Recurse -Force "$libraryRoot\skills\3d-webgl" "$targetDir\webgpu-threejs-tsl"
 
-# 4. Taste Suite (Her bir taste skill bağımsız olarak Antigravity'e eklenir)
+# 4. Taste Suite (Leonxlnx)
 $tasteDir = "$libraryRoot\skills\taste-suite"
 if (Test-Path $tasteDir) {
     Get-ChildItem -Path $tasteDir -Directory | ForEach-Object {
         $skillName = $_.Name
         Copy-Item -Recurse -Force $_.FullName "$targetDir\$skillName"
-        Write-Host "  + Yüklendi: $skillName" -ForegroundColor Gray
+        Write-Host "  + [taste-suite] $skillName" -ForegroundColor Gray
+    }
+}
+
+# 5. Design Genres & Craft (madebymustafa)
+$genreDir = "$libraryRoot\skills\design-genres"
+if (Test-Path $genreDir) {
+    Get-ChildItem -Path $genreDir -Directory | ForEach-Object {
+        $skillName = $_.Name
+        Copy-Item -Recurse -Force $_.FullName "$targetDir\$skillName"
+        Write-Host "  + [design-genre] $skillName" -ForegroundColor DarkCyan
     }
 }
 

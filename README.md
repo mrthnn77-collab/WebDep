@@ -1,31 +1,35 @@
 # 🧠 murathan-skills
 
-> Universal skill library for web design, animation, taste engineering, 3D & generative art.  
+> Universal skill library for web design, genre engineering, animation, taste engineering, 3D & generative art.  
 > Works with **Antigravity**, **Cursor**, and **OpenAI Codex**.
 
-## 📦 Skills
+## 📦 Skills Architecture
 
-| Skill | Category | Description |
+| Category | Source / Suite | Highlights & Included Skills |
 |---|---|---|
-| [`design-systems`](./skills/design-systems/) | Design Tokens | Brand tokens from 80+ world-class brands (Stripe, Apple, Vercel, Linear…) |
-| [`taste-suite`](./skills/taste-suite/) | Taste Engineering | **Leonxlnx taste-skill**: core taste v2, minimalist, soft UI, brutalist, brandkit, redesign, image-to-code |
-| [`creative-engine`](./skills/creative-engine/) | Motion & Anti-Slop | Genjutsu 60fps animations (GSAP, Framer), anti-AI-slop tells, UI-UX-Pro-Max databases |
-| [`3d-webgl`](./skills/3d-webgl/) | 3D & Shaders | Three.js, R3F, WebGPU/TSL, custom vertex/fragment shaders |
-| [`generative-art`](./skills/generative-art/) | Creative Coding | Canvas, particle physics, organic fluid simulations |
+| **Design Systems** | `skills/design-systems` | Exact tokens from **80+ world brands** (Stripe, Apple, Vercel, Linear, Supabase, Ferrari…) |
+| **Design Genres & Craft** | `skills/design-genres` | **madebymustafa/design-taste (24 Skills)**: Editorial-minimal, quiet-luxury, dark-tech, cinematic-motion, retro-print, japanese-minimal, neo-brutalism, taste-gsap, taste-landing-page, etc. |
+| **Taste Engineering** | `skills/taste-suite` | **Leonxlnx taste-skill**: Core taste v2, minimalist-skill, soft-skill, brutalist-skill, brandkit, redesign-skill, image-to-code |
+| **Motion & Creative Engine** | `skills/creative-engine` | **Genjutsu**: 60fps animations, GSAP timelines, Framer Motion, Tells (anti-AI slop), and UI-UX-Pro-Max |
+| **3D & Shaders** | `skills/3d-webgl` | Three.js, R3F, WebGPU/TSL, custom shaders |
+| **Generative Art** | `skills/generative-art` | Canvas, particle physics, organic fluid simulations |
 
 ---
 
-## 🎨 Taste Suite Highlights
+## 🎭 10 Distinct Genre Packs (Instant Aesthetics)
 
-The library now includes the complete **Taste Skill Suite** by Leonxlnx:
-- **`taste-skill` (v2)**: Eliminates AI-design genericness, provides aesthetic directions and automated design inspection.
-- **`minimalist-skill`**: Swiss / Scandinavian ultra-clean typography and whitespace for modern web apps.
-- **`soft-skill`**: Warm tones, pill geometries, tactile interfaces and organic lighting.
-- **`brutalist-skill`**: High-contrast, bold, editorial, unapologetic raw web design.
-- **`brandkit`**: Generates distinct, tailored brand languages on the fly.
-- **`redesign-skill`**: Takes generic/broken web pages and transforms them into award-winning interfaces.
-- **`image-to-code-skill`**: Translates Figma/screenshots into pixel-perfect semantic code.
-- **`output-skill`**: Forces AI models to deliver complete, non-truncated production code.
+Pick one genre pack per project to establish an immediate, unmistakable character:
+
+1. **`editorial-minimal`**: Swiss print, warm paper, ink, vermillion, hairline grids.
+2. **`quiet-luxury`**: Private bank annual report, ivory, deep ink, brass/oxblood accents, serif italics.
+3. **`dark-tech`**: Linear / Vercel style, near-black, hairline borders, mono coordinates.
+4. **`cinematic-motion`**: Awwwards Site-of-the-day, film on studio print, drag carousels, scrubbed index.
+5. **`japanese-minimal`**: Wabi-sabi, rice paper, sumi ink, red seal hanko, vertical typography.
+6. **`retro-print`**: Riso / 70s-80s print revival, pigment inks, halftone dots, rubber stamps.
+7. **`neo-brutalism`**: Bold consumer web, ink borders, 6px hard shadows, chunky pills.
+8. **`brutalist-industrial`**: Declassified blueprint, visible grid rules, mono coordinates.
+9. **`playful-color`**: Sticker-poster energy, giant heavy type, saturated inks.
+10. **`corporate-trust`**: Enterprise trust-first, white, deep blue, proof tables, compliance chips.
 
 ---
 
@@ -35,7 +39,7 @@ The library now includes the complete **Taste Skill Suite** by Leonxlnx:
 # Clone
 git clone https://github.com/mrthnn77-collab/murathan-skills.git $HOME\murathan-skills
 
-# Install to Antigravity
+# Install all skills to Antigravity
 .\install\antigravity.ps1
 
 # Generate Cursor rules for any project

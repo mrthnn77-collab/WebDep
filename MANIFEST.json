@@ -1,7 +1,7 @@
 {
   "name": "murathan-skills",
-  "version": "1.1.0",
-  "description": "Universal skill library for web design, animation, taste engineering, 3D & generative art",
+  "version": "1.2.0",
+  "description": "Universal skill library for web design, genre engineering, animation, taste engineering, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
     {
@@ -10,6 +10,14 @@
       "path": "skills/design-systems",
       "description": "Brand tokens from 80+ world-class brands (Stripe, Apple, Vercel, Linear, etc.)",
       "tags": ["design", "tokens", "brand", "typography", "color"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "design-genres",
+      "name": "Design Genres & Craft (madebymustafa)",
+      "path": "skills/design-genres",
+      "description": "24 Genre packs & craft skills: editorial-minimal, quiet-luxury, dark-tech, cinematic-motion, retro-print, japanese-minimal, brutalist-industrial, neo-brutalism, taste-gsap, etc.",
+      "tags": ["genres", "editorial", "luxury", "dark-tech", "cinematic", "craft", "gsap", "typography"],
       "formats": ["antigravity", "cursor", "codex"]
     },
     {
