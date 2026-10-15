@@ -1,9 +1,17 @@
 {
   "name": "murathan-skills",
-  "version": "1.6.0",
-  "description": "Universal skill library for web design, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
+  "version": "1.7.0",
+  "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
+    {
+      "id": "site-dna-extractor",
+      "name": "Site DNA Extractor & Reverse-Engineering Engine",
+      "path": "skills/site-dna-extractor",
+      "description": "Deconstructs, reverse-engineers, and extracts design DNA from any high-end site (MotionSites.ai, Awwwards winners, Stripe, Linear). Pulls gradients, noise masks, 3D heroes, and converts them to DESIGN.md and code",
+      "tags": ["reverse-engineer", "motionsites", "inspection", "extractor", "gradient-mesh", "noise-masks"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
     {
       "id": "design-md",
       "name": "DESIGN.md & CLAUDE.md Design Contract Architect",

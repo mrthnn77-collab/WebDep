@@ -1,12 +1,13 @@
 # 🧠 murathan-skills
 
-> Universal skill library for web design, DESIGN.md contracts, motion principles, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
+> Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
 > Works with **Antigravity**, **Cursor**, and **OpenAI Codex**.
 
 ## 📦 Skills Architecture
 
 | Category | Source / Suite | Highlights & Included Skills |
 |---|---|---|
+| **Site DNA Extractor** | `skills/site-dna-extractor` | **Reverse-Engineering & Extraction Engine**: Inspect any URL (e.g. MotionSites.ai, Awwwards) and extract exact typography, iridescent gradient meshes, noise masks, 3D hero setups, and micro-interactions |
 | **DESIGN.md & Claude Contract** | `skills/design-md` | **Design System Contract Architect**: Authoring, auditing, and enforcing `DESIGN.md` & `CLAUDE.md` files. Value-intent-boundary tokens, explicit don'ts, component decision logic, and official templates |
 | **Design Motion Principles** | `skills/motion-principles` | **kylezantos/design-motion-principles**: Distilled from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Create mode (purposeful interaction), Audit mode (anti-slop, motion gap analysis, HTML report with live looping demos) |
 | **Awesome Claude Design** | `skills/claude-design` | **Aesthetic Families & Hybrid Brand Remixes**: Stripe × A24, Linear × Claude, Mercury × Linear, Vercel × Pitchfork, plus 20-min landing page and 3D shader recipes |
