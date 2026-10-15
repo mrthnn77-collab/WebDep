@@ -78,4 +78,8 @@ Write-Host "  + [style-ui] Handmade templates (React 19, Next 16, Tailwind v4, B
 Copy-Item -Recurse -Force "$libraryRoot\skills\analog-ui" "$targetDir\analog-ui"
 Write-Host "  + [analog-ui] Studio Hyper-Skeuomorphic hardware controls (dials, faders, meters, lighting engine)" -ForegroundColor Green
 
+# 15. Kokonut UI Tactile Hardware Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\kokonut-ui" "$targetDir\kokonut-ui"
+Write-Host "  + [kokonut-ui] Tactile hardware (pull-cords, switch buttons, detent dials, tear tickets, hold latches)" -ForegroundColor Cyan
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

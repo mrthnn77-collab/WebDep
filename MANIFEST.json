@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
@@ -122,6 +122,14 @@
       "path": "skills/analog-ui",
       "description": "Studio Hyper-Skeuomorphic tactile & mechanical hardware controls by TechSquidTV. Dynamic physical lighting engine (useAnalogLighting), machined aluminium dials, studio faders, VU needle meters, LED bar meters, rocker switches, rotary selectors, and hardware chassis panels",
       "tags": ["analog-ui", "skeuomorphism", "mechanical", "hardware-ui", "lighting-engine", "dials", "faders", "vu-meters", "rocker-switches"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "kokonut-ui",
+      "name": "Kokonut UI Tactile Hardware & Micro-Interactions Suite",
+      "path": "skills/kokonut-ui",
+      "description": "Physical & mechanical tactile components by kokonut-labs (kokonutui.com). Spring pull-cords, tactile rocker switches, detent dials, tearable perforated ticket buttons, hold-to-confirm triggers, receipt printer mechanisms, and liquid sliders",
+      "tags": ["kokonut-ui", "tactile", "pull-cord", "switch-button", "detent-dial", "tear-button", "hold-button", "liquid-slider", "micro-interactions"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]
