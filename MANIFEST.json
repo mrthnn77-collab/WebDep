@@ -1,23 +1,31 @@
 {
   "name": "murathan-skills",
-  "version": "1.0.0",
-  "description": "Universal skill library for web design, animation, 3D & generative art",
+  "version": "1.1.0",
+  "description": "Universal skill library for web design, animation, taste engineering, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
     {
       "id": "design-systems",
       "name": "Design Systems",
       "path": "skills/design-systems",
-      "description": "Brand tokens from 80+ world-class brands",
+      "description": "Brand tokens from 80+ world-class brands (Stripe, Apple, Vercel, Linear, etc.)",
       "tags": ["design", "tokens", "brand", "typography", "color"],
       "formats": ["antigravity", "cursor", "codex"]
     },
     {
-      "id": "animation",
-      "name": "Animation",
-      "path": "skills/animation",
-      "description": "GSAP, Framer Motion, CSS Native — 60fps recipes",
-      "tags": ["animation", "gsap", "framer", "css", "motion"],
+      "id": "taste-suite",
+      "name": "Taste Suite (Leonxlnx)",
+      "path": "skills/taste-suite",
+      "description": "Curated taste engineering: taste-skill v2, brandkit, minimalist, soft, brutalist, redesign, image-to-code",
+      "tags": ["taste", "ux", "ui", "minimalist", "brutalist", "soft-ui", "redesign"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "creative-engine",
+      "name": "Creative Engine & Motion",
+      "path": "skills/creative-engine",
+      "description": "Genjutsu 60fps animations, GSAP, Framer Motion, Tells (anti-AI slop), and UI-UX-Pro-Max",
+      "tags": ["animation", "gsap", "framer", "css", "motion", "anti-ai-slop"],
       "formats": ["antigravity", "cursor", "codex"]
     },
     {
