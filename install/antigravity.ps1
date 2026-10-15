@@ -36,4 +36,14 @@ if (Test-Path $genreDir) {
     }
 }
 
+# 6. UI/UX Pro Max Suite (nextlevelbuilder)
+$promaxDir = "$libraryRoot\skills\ui-ux-pro-max"
+if (Test-Path $promaxDir) {
+    Get-ChildItem -Path $promaxDir -Directory | ForEach-Object {
+        $skillName = $_.Name
+        Copy-Item -Recurse -Force $_.FullName "$targetDir\$skillName"
+        Write-Host "  + [ui-ux-pro-max] $skillName" -ForegroundColor Magenta
+    }
+}
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

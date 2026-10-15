@@ -1,7 +1,7 @@
 {
   "name": "murathan-skills",
-  "version": "1.2.0",
-  "description": "Universal skill library for web design, genre engineering, animation, taste engineering, 3D & generative art",
+  "version": "1.3.0",
+  "description": "Universal skill library for web design, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
     {
@@ -10,6 +10,14 @@
       "path": "skills/design-systems",
       "description": "Brand tokens from 80+ world-class brands (Stripe, Apple, Vercel, Linear, etc.)",
       "tags": ["design", "tokens", "brand", "typography", "color"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI/UX Pro Max Suite (nextlevelbuilder)",
+      "path": "skills/ui-ux-pro-max",
+      "description": "Official UI-UX-PRO-MAX search engine, datasets (Google Fonts, Phosphor icons, stacks, color, product heuristics) plus banner, brand, design-system, and ui-styling skills",
+      "tags": ["ui-ux-pro-max", "design-intelligence", "search-engine", "fonts", "icons", "stacks"],
       "formats": ["antigravity", "cursor", "codex"]
     },
     {
@@ -32,7 +40,7 @@
       "id": "creative-engine",
       "name": "Creative Engine & Motion",
       "path": "skills/creative-engine",
-      "description": "Genjutsu 60fps animations, GSAP, Framer Motion, Tells (anti-AI slop), and UI-UX-Pro-Max",
+      "description": "Genjutsu 60fps animations, GSAP, Framer Motion, Tells (anti-AI slop), and motion systems",
       "tags": ["animation", "gsap", "framer", "css", "motion", "anti-ai-slop"],
       "formats": ["antigravity", "cursor", "codex"]
     },
