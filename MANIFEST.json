@@ -1,0 +1,40 @@
+{
+  "name": "murathan-skills",
+  "version": "1.0.0",
+  "description": "Universal skill library for web design, animation, 3D & generative art",
+  "author": "mrthnn77-collab",
+  "skills": [
+    {
+      "id": "design-systems",
+      "name": "Design Systems",
+      "path": "skills/design-systems",
+      "description": "Brand tokens from 80+ world-class brands",
+      "tags": ["design", "tokens", "brand", "typography", "color"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "animation",
+      "name": "Animation",
+      "path": "skills/animation",
+      "description": "GSAP, Framer Motion, CSS Native — 60fps recipes",
+      "tags": ["animation", "gsap", "framer", "css", "motion"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "3d-webgl",
+      "name": "3D & WebGL",
+      "path": "skills/3d-webgl",
+      "description": "Three.js, R3F, WebGPU/TSL, custom shaders",
+      "tags": ["3d", "webgl", "threejs", "r3f", "webgpu", "shaders"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "generative-art",
+      "name": "Generative Art",
+      "path": "skills/generative-art",
+      "description": "Canvas, particle systems, fluid simulations",
+      "tags": ["generative", "canvas", "particles", "fluid", "art"],
+      "formats": ["antigravity", "cursor", "codex"]
+    }
+  ]
+}
