@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KINESIS — Universal Skill Library Showcase</title>
+  
+  <!-- Fonts from UI-UX-PRO-MAX curated typography pairings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM TOKENS (Universal Skill Library Standard)
+       Multi-genre variables supporting live polarity & style switching
+       ========================================================================== */
+    :root {
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Space Grotesk', var(--font-sans);
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-serif: 'Newsreader', serif;
+
+      /* Dark Tech (Default Theme) */
+      --bg: #07080b;
+      --bg-surface: #0e1117;
+      --bg-card: rgba(18, 22, 31, 0.65);
+      --bg-card-hover: rgba(26, 32, 45, 0.85);
+      --text: #f0f3f8;
+      --text-muted: #8b95a8;
+      --text-dim: #4f5869;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(0, 230, 180, 0.5);
+      --accent: #00f2ad;
+      --accent-glow: rgba(0, 242, 173, 0.25);
+      --accent-secondary: #6366f1;
+      --hairline: 0 0 0 1px var(--border);
+      --shadow-elevation: 
+        0 1px 2px rgba(0,0,0,0.3),
+        0 4px 12px rgba(0,0,0,0.4),
+        0 16px 36px -4px rgba(0,0,0,0.6);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+      --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* THEME: Quiet Luxury */
+    body[data-theme="luxury"] {
+      --bg: #f8f6f0;
+      --bg-surface: #efece4;
+      --bg-card: rgba(255, 255, 255, 0.85);
+      --bg-card-hover: #ffffff;
+      --text: #1a1917;
+      --text-muted: #5e5a54;
+      --text-dim: #99948a;
+      --border: rgba(30, 28, 25, 0.09);
+      --accent: #8e2b26;
+      --accent-glow: rgba(142, 43, 38, 0.18);
+      --accent-secondary: #c9933b;
+      --font-display: var(--font-serif);
+      --hairline: 0 0 0 1px rgba(30, 28, 25, 0.08);
+      --shadow-elevation: 0 10px 30px -10px rgba(0,0,0,0.06);
+    }
+
+    /* THEME: Neo-Brutalism */
+    body[data-theme="brutalist"] {
+      --bg: #fffdf5;
+      --bg-surface: #ffebb3;
+      --bg-card: #ffffff;
+      --bg-card-hover: #ffffff;
+      --text: #050505;
+      --text-muted: #333333;
+      --text-dim: #666666;
+      --border: #050505;
+      --accent: #ff3366;
+      --accent-glow: none;
+      --accent-secondary: #3b82f6;
+      --hairline: 0 0 0 2.5px #050505;
+      --shadow-elevation: 6px 6px 0px #050505;
+      --radius-sm: 0px;
+      --radius-md: 0px;
+      --radius-lg: 0px;
+    }
+
+    /* THEME: Cinematic Noir */
+    body[data-theme="cinematic"] {
+      --bg: #000000;
+      --bg-surface: #0a0a0d;
+      --bg-card: rgba(14, 14, 18, 0.7);
+      --bg-card-hover: rgba(22, 22, 28, 0.9);
+      --text: #ffffff;
+      --text-muted: #7d7d8c;
+      --text-dim: #444452;
+      --border: rgba(255, 255, 255, 0.12);
+      --accent: #ff4d00;
+      --accent-glow: rgba(255, 77, 0, 0.35);
+      --accent-secondary: #00b4d8;
+    }
+
+    /* ==========================================================================
+       BASE STYLES & RESET
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      transition: background-color 0.4s ease, color 0.3s ease;
+      position: relative;
+    }
+
+    /* Ambient noise overlay (Anti-flatness principle) */
+    .noise-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.8;
+    }
+
+    /* Canvas Generative Background */
+    #mesh-canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Custom Fluid Magnetic Cursor (Desktop) */
+    .custom-cursor {
+      position: fixed;
+      top: 0; left: 0;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--accent);
+      pointer-events: none;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: difference;
+      transition: transform 0.12s ease-out, width 0.2s ease, height 0.2s ease, background 0.3s ease;
+      opacity: 0;
+    }
+    .custom-cursor.active {
+      opacity: 1;
+    }
+    .custom-cursor.hovering {
+      width: 58px; height: 58px;
+      background: #ffffff;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    header {
+      position: fixed;
+      top: 24px; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 0 24px;
+    }
+
+    .nav-pill {
+      background: var(--bg-card);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-elevation);
+      border-radius: var(--radius-pill);
+      padding: 8px 18px 8px 24px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      transition: all 0.3s var(--ease-spring);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+      animation: pulse 2.5s infinite var(--ease-spring);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+      cursor: pointer;
+    }
+    .nav-link:hover {
+      color: var(--text);
+    }
+
+    /* Live Genre/Theme Switcher Buttons */
+    .theme-selector {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      padding: 3px;
+      gap: 4px;
+    }
+
+    .theme-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.2s var(--ease-spring);
+      font-family: var(--font-sans);
+    }
+    .theme-btn.active {
+      background: var(--accent);
+      color: #050505;
+      box-shadow: 0 2px 8px var(--accent-glow);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-container {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 140px 24px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-elevation);
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 7.5vw, 92px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      max-width: 980px;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    .hero-headline span.gradient-text {
+      background: linear-gradient(135deg, var(--text) 30%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(17px, 2vw, 21px);
+      color: var(--text-muted);
+      max-width: 680px;
+      line-height: 1.6;
+      margin-bottom: 44px;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-magnetic {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 36px;
+      border-radius: var(--radius-pill);
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: transform 0.15s var(--ease-spring), box-shadow 0.25s ease;
+      will-change: transform;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #000000;
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+    .btn-primary:hover {
+      box-shadow: 0 8px 32px var(--accent-glow);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* ==========================================================================
+       LIVE INTERACTIVE SHOWCASE GRID (The Skills in Action)
+       ========================================================================== */
+    .section-grid {
+      position: relative;
+      z-index: 1;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 60px 24px 120px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+
+    .section-header-cell {
+      grid-column: span 12;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .section-tag {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    /* 3D Specular Tilt Card */
+    .tilt-card {
+      position: relative;
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-elevation);
+      padding: 36px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s var(--ease-spring), border-color 0.3s ease;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .tilt-card:hover {
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    /* Moving specular glare light effect */
+    .card-glare {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle 300px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.08), transparent 70%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .col-7 { grid-column: span 7; }
+    .col-5 { grid-column: span 5; }
+    .col-4 { grid-column: span 4; }
+    .col-8 { grid-column: span 8; }
+    .col-12 { grid-column: span 12; }
+
+    @media (max-width: 900px) {
+      .col-7, .col-5, .col-4, .col-8 { grid-column: span 12; }
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .card-desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* Interactive Spring Motion Widget (Emil Kowalski Physics) */
+    .spring-playground {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .interactive-slider-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .slider-label {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .ball-track {
+      height: 64px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-sm);
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+    }
+    .spring-ball {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      box-shadow: 0 6px 18px var(--accent-glow);
+      cursor: grab;
+      position: absolute;
+      left: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: #000;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    /* Sound Synthesizer Waveform Visualizer */
+    .synth-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .waveform-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      height: 40px;
+      flex: 1;
+    }
+    .wave-bar {
+      width: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+      height: 8px;
+      transition: height 0.1s ease;
+    }
+
+    /* Tokens Table (Direct from UI-UX-PRO-MAX & Design Systems) */
+    .tokens-mini-table {
+      width: 100%;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      border-collapse: collapse;
+      margin-top: 14px;
+    }
+    .tokens-mini-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .token-chip {
+      display: inline-block;
+      width: 14px; height: 14px;
+      border-radius: 3px;
+      margin-right: 8px;
+      vertical-align: middle;
+      box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    }
+
+    /* FPS & Live Metrics Pill */
+    .fps-counter {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      z-index: 100;
+      background: rgba(14, 17, 23, 0.85);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      box-shadow: var(--shadow-elevation);
+    }
+    .fps-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #00f2ad;
+      box-shadow: 0 0 8px #00f2ad;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--text-dim);
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- Noise filter overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Background WebGL/Canvas Generative Mesh -->
+  <canvas id="mesh-canvas"></canvas>
+
+  <!-- Custom fluid cursor -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- Floating Navigation -->
+  <header>
+    <nav class="nav-pill">
+      <a href="#" class="nav-brand">
+        <div class="brand-dot"></div>
+        <span>KINESIS</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#showcase">Tokens</a></li>
+        <li><a class="nav-link" href="#motion">60FPS Motion</a></li>
+        <li><a class="nav-link" href="#sound">Audio Synthesizer</a></li>
+      </ul>
+
+      <!-- Live Genre Theme Switcher -->
+      <div class="theme-selector">
+        <button class="theme-btn active" data-set-theme="dark">Dark Tech</button>
+        <button class="theme-btn" data-set-theme="luxury">Quiet Luxury</button>
+        <button class="theme-btn" data-set-theme="cinematic">Cinematic</button>
+        <button class="theme-btn" data-set-theme="brutalist">Brutalist</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-container">
+      <div class="status-badge">
+        <span>⚡ 862 SKILL ENGINE LOADED</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Beyond Artificial.<br />
+        <span class="gradient-text">Engineered With Pure Taste.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A synthesis of 80+ world design systems, 60 FPS Emil Kowalski motion physics, 
+        UI-UX Pro Max intelligence, and generative interactive canvas art.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-magnetic btn-primary" id="btn-sound-trigger">
+          <span>🔊 Synthesize Sound & Pulse</span>
+        </button>
+        <button class="btn-magnetic btn-secondary" id="btn-morph-theme">
+          <span>⚡ Morph Genre Style</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Interactive Showcase Section -->
+    <section class="section-grid" id="showcase">
+      <div class="section-header-cell">
+        <span class="section-tag">// UNIVERSAL SKILL LIBRARY IN ACTION</span>
+        <h2 class="section-title">Micro-Interactions & Token Anatomy</h2>
+      </div>
+
+      <!-- Card 1: 3D Tilt + Emil Kowalski Spring Physics -->
+      <div class="tilt-card col-7" id="motion">
+        <div class="card-glare"></div>
+        <div>
+          <span class="section-tag">MOTION PRINCIPLES</span>
+          <h3 class="card-title">Emil Kowalski Restraint & Spring Physics</h3>
+          <p class="card-desc">
+            No flat transitions. Move the ball or tweak the stiffness slider to test real-time 
+            spring damping without frame drops.
+          </p>
+        </div>
+
+        <div class="spring-playground">
+          <div class="interactive-slider-box">
+            <div class="slider-label">
+              <span>Spring Tension / Stiffness</span>
+              <span id="stiffness-val">180</span>
+            </div>
+            <input type="range" id="stiffness-slider" min="50" max="400" value="180" />
+          </div>
+
+          <div class="ball-track" id="ball-track">
+            <div class="spring-ball" id="spring-ball">DRAG</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Real-time Audio Synthesizer (Zero asset sound design) -->
+      <div class="tilt-card col-5" id="sound">
+        <div class="card-glare"></div>
+        <div>
+          <span class="section-tag">PROCEDURAL HAPTICS</span>
+          <h3 class="card-title">Web Audio API Synth</h3>
+          <p class="card-desc">
+            Procedural micro-interaction feedback. Interactive sounds built entirely in code using harmonic sine oscillators.
+          </p>
+        </div>
+
+        <div class="synth-box">
+          <button class="btn-magnetic btn-secondary" id="play-chord-btn" style="padding: 10px 18px; font-size: 13px;">
+            Trigger Chord
+          </button>
+          <div class="waveform-bars" id="waveform">
+            <!-- 16 dynamic waveform bars -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: UI-UX-PRO-MAX Token Matrix -->
+      <div class="tilt-card col-4">
+        <div class="card-glare"></div>
+        <div>
+          <span class="section-tag">DESIGN INTELLIGENCE</span>
+          <h3 class="card-title">UI-UX Pro Max Ramps</h3>
+          <p class="card-desc">
+            Extracted from the 22+ stack data sets. Strict contrast ratios adhering to WCAG 2.2 AA.
+          </p>
+        </div>
+
+        <table class="tokens-mini-table">
+          <tr>
+            <td><span class="token-chip" style="background:#00f2ad;"></span>Primary CTA</td>
+            <td style="color:var(--text-muted);">#00F2AD</td>
+          </tr>
+          <tr>
+            <td><span class="token-chip" style="background:#6366f1;"></span>Secondary</td>
+            <td style="color:var(--text-muted);">#6366F1</td>
+          </tr>
+          <tr>
+            <td><span class="token-chip" style="background:#0e1117; border: 1px solid #333;"></span>Surface 01</td>
+            <td style="color:var(--text-muted);">#0E1117</td>
+          </tr>
+          <tr>
+            <td><span class="token-chip" style="background:#f0f3f8;"></span>Text Ink</td>
+            <td style="color:var(--text-muted);">#F0F3F8</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Card 4: Brand Remix Engine -->
+      <div class="tilt-card col-8">
+        <div class="card-glare"></div>
+        <div>
+          <span class="section-tag">CLAUDE DESIGN REMIX</span>
+          <h3 class="card-title">Hybrid Design: Linear × A24 × Apple</h3>
+          <p class="card-desc">
+            Combining Linear's ultra-crisp hairline structure (`0 0 0 1px inset`), A24's cinematic deep blacks and film tension, 
+            and Apple's fluid spring deceleration curves.
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+          <span style="font-family: var(--font-mono); font-size: 12px; padding: 6px 14px; border-radius: var(--radius-pill); background: rgba(255,255,255,0.06); border: 1px solid var(--border);">
+            -0.04em Letter Spacing
+          </span>
+          <span style="font-family: var(--font-mono); font-size: 12px; padding: 6px 14px; border-radius: var(--radius-pill); background: rgba(255,255,255,0.06); border: 1px solid var(--border);">
+            60 FPS GPU Acceleration
+          </span>
+          <span style="font-family: var(--font-mono); font-size: 12px; padding: 6px 14px; border-radius: var(--radius-pill); background: rgba(255,255,255,0.06); border: 1px solid var(--border);">
+            Zero AI Slop Tells
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Live Performance & Engine Monitor -->
+  <div class="fps-counter">
+    <div class="fps-dot"></div>
+    <span id="fps-display">60 FPS</span>
+    <span>•</span>
+    <span style="color:var(--accent);">862 SKILLS ACTIVE</span>
+  </div>
+
+  <footer>
+    <p>Engineered with <strong>murathan-skills</strong> • Powered by Antigravity, Claude Design & UI-UX Pro Max</p>
+  </footer>
+
+  <!-- ==========================================================================
+       SCRIPTS: MOTION, PARTICLES, TILT, SOUND SYNTHESIZER
+       ========================================================================== -->
+  <script>
+    // --------------------------------------------------------------------------
+    // 1. GENERATIVE INTERACTIVE PARTICLES & MESH (Canvas)
+    // --------------------------------------------------------------------------
+    const canvas = document.getElementById('mesh-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2, targetX: 0, targetY: 0 };
+    const particles = [];
+    const PARTICLE_COUNT = 55;
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.6;
+        this.vy = (Math.random() - 0.5) * 0.6;
+        this.radius = Math.random() * 2 + 1;
+        this.baseAlpha = Math.random() * 0.4 + 0.1;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Mouse gentle repel
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 140) {
+          const force = (140 - dist) / 140;
+          this.x -= (dx / dist) * force * 2.2;
+          this.y -= (dy / dist) * force * 2.2;
+        }
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent');
+        ctx.globalAlpha = this.baseAlpha;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push(new Particle());
+    }
+
+    // --------------------------------------------------------------------------
+    // 2. 60 FPS RENDER LOOP & FRAME RATE MONITOR
+    // --------------------------------------------------------------------------
+    let lastTime = performance.now();
+    let frameCount = 0;
+    let fps = 60;
+    const fpsDisplay = document.getElementById('fps-display');
+
+    function animate(now) {
+      ctx.clearRect(0, 0, width, height);
+
+      // Draw subtle connecting constellation lines
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 110) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent');
+            ctx.globalAlpha = (1 - dist / 110) * 0.15;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Smooth mouse follow
+      mouse.x += (mouse.targetX - mouse.x) * 0.1;
+      mouse.y += (mouse.targetY - mouse.y) * 0.1;
+
+      // FPS Calculation
+      frameCount++;
+      if (now - lastTime >= 1000) {
+        fps = frameCount;
+        frameCount = 0;
+        lastTime = now;
+        fpsDisplay.textContent = `${fps} FPS`;
+      }
+
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+
+    // --------------------------------------------------------------------------
+    // 3. FLUID MOUSE TRACKING & CUSTOM CURSOR
+    // --------------------------------------------------------------------------
+    const cursor = document.getElementById('cursor');
+    window.addEventListener('mousemove', (e) => {
+      mouse.targetX = e.clientX;
+      mouse.targetY = e.clientY;
+      cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+      cursor.classList.add('active');
+    });
+
+    document.querySelectorAll('button, a, input, .tilt-card').forEach((el) => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+    });
+
+    // --------------------------------------------------------------------------
+    // 4. 3D SPECULAR TILT CARDS
+    // --------------------------------------------------------------------------
+    const cards = document.querySelectorAll('.tilt-card');
+    cards.forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -7;
+        const rotateY = ((x - centerX) / centerX) * 7;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 5. MAGNETIC BUTTONS (Jakub Krehel Fluid Easing)
+    // --------------------------------------------------------------------------
+    document.querySelectorAll('.btn-magnetic').forEach((btn) => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate3d(${x * 0.3}px, ${y * 0.3}px, 0)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = `translate3d(0, 0, 0)`;
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 6. PROCEDURAL SOUND SYNTHESIZER (Web Audio API)
+    // --------------------------------------------------------------------------
+    let audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    function playTone(freq, type = 'sine', duration = 0.3, gainVal = 0.15) {
+      try {
+        const ctx = getAudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, ctx.currentTime);
+        gain.gain.setValueAtTime(gainVal, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + duration);
+
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        osc.start();
+        osc.stop(ctx.currentTime + duration);
+      } catch (err) {
+        console.warn('Audio not allowed yet');
+      }
+    }
+
+    // Build 16 waveform bars
+    const waveformContainer = document.getElementById('waveform');
+    for (let i = 0; i < 16; i++) {
+      const bar = document.createElement('div');
+      bar.className = 'wave-bar';
+      waveformContainer.appendChild(bar);
+    }
+
+    function pulseWaveform() {
+      const bars = document.querySelectorAll('.wave-bar');
+      bars.forEach((bar) => {
+        const h = Math.random() * 32 + 8;
+        bar.style.height = `${h}px`;
+        setTimeout(() => { bar.style.height = '8px'; }, 250);
+      });
+    }
+
+    const playChordBtn = document.getElementById('play-chord-btn');
+    const heroSoundBtn = document.getElementById('btn-sound-trigger');
+
+    function triggerChordSynth() {
+      // Harmonic chord: F-sharp major pentatonic
+      playTone(370.0, 'sine', 0.45, 0.12);
+      setTimeout(() => playTone(554.37, 'sine', 0.45, 0.1), 60);
+      setTimeout(() => playTone(740.0, 'triangle', 0.6, 0.08), 120);
+      pulseWaveform();
+    }
+
+    playChordBtn.addEventListener('click', triggerChordSynth);
+    heroSoundBtn.addEventListener('click', triggerChordSynth);
+
+    // --------------------------------------------------------------------------
+    // 7. EMIL KOWALSKI SPRING BALL PHYSICS
+    // --------------------------------------------------------------------------
+    const ball = document.getElementById('spring-ball');
+    const track = document.getElementById('ball-track');
+    const stiffnessSlider = document.getElementById('stiffness-slider');
+    const stiffnessVal = document.getElementById('stiffness-val');
+
+    let ballX = 16;
+    let targetX = 16;
+    let vx = 0;
+    let stiffness = 180;
+    const damping = 18;
+    let isDragging = false;
+
+    stiffnessSlider.addEventListener('input', (e) => {
+      stiffness = parseFloat(e.target.value);
+      stiffnessVal.textContent = stiffness;
+    });
+
+    ball.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      ball.style.cursor = 'grabbing';
+      playTone(440, 'triangle', 0.1, 0.05);
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const rect = track.getBoundingClientRect();
+      targetX = Math.max(16, Math.min(e.clientX - rect.left - 19, rect.width - 54));
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (isDragging) {
+        isDragging = false;
+        ball.style.cursor = 'grab';
+        playTone(330, 'sine', 0.15, 0.06);
+      }
+    });
+
+    function springLoop() {
+      if (!isDragging) {
+        const force = (targetX - ballX) * (stiffness * 0.001);
+        vx = (vx + force) * (1 - damping * 0.01);
+        ballX += vx;
+      } else {
+        ballX = targetX;
+        vx = 0;
+      }
+      ball.style.transform = `translate3d(${ballX - 16}px, 0, 0)`;
+      requestAnimationFrame(springLoop);
+    }
+    requestAnimationFrame(springLoop);
+
+    // --------------------------------------------------------------------------
+    // 8. LIVE GENRE & THEME SWITCHER
+    // --------------------------------------------------------------------------
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    const morphBtn = document.getElementById('btn-morph-theme');
+    const themes = ['dark', 'luxury', 'cinematic', 'brutalist'];
+    let currentThemeIdx = 0;
+
+    function setTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      themeButtons.forEach((b) => {
+        b.classList.toggle('active', b.getAttribute('data-set-theme') === theme);
+      });
+      playTone(523.25, 'sine', 0.2, 0.08); // C5 notification
+    }
+
+    themeButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const t = btn.getAttribute('data-set-theme');
+        currentThemeIdx = themes.indexOf(t);
+        setTheme(t);
+      });
+    });
+
+    morphBtn.addEventListener('click', () => {
+      currentThemeIdx = (currentThemeIdx + 1) % themes.length;
+      setTheme(themes[currentThemeIdx]);
+    });
+  </script>
+</body>
+</html>
