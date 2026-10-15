@@ -7,16 +7,20 @@ $libraryRoot = Split-Path -Parent $scriptRoot
 
 Write-Host ">>> Antigravity skilleri senkronize ediliyor..." -ForegroundColor Cyan
 
-# 1. Design Systems
+# 1. Claude Design & Remixes
+Copy-Item -Recurse -Force "$libraryRoot\skills\claude-design" "$targetDir\claude-design"
+Write-Host "  + [claude-design] aesthetic families & remixes" -ForegroundColor Yellow
+
+# 2. Design Systems
 Copy-Item -Recurse -Force "$libraryRoot\skills\design-systems" "$targetDir\professional-web-design"
 
-# 2. Creative Engine (Genjutsu)
+# 3. Creative Engine (Genjutsu)
 Copy-Item -Recurse -Force "$libraryRoot\skills\creative-engine" "$targetDir\genjutsu"
 
-# 3. 3D WebGL
+# 4. 3D WebGL
 Copy-Item -Recurse -Force "$libraryRoot\skills\3d-webgl" "$targetDir\webgpu-threejs-tsl"
 
-# 4. Taste Suite (Leonxlnx)
+# 5. Taste Suite (Leonxlnx)
 $tasteDir = "$libraryRoot\skills\taste-suite"
 if (Test-Path $tasteDir) {
     Get-ChildItem -Path $tasteDir -Directory | ForEach-Object {
@@ -26,7 +30,7 @@ if (Test-Path $tasteDir) {
     }
 }
 
-# 5. Design Genres & Craft (madebymustafa)
+# 6. Design Genres & Craft (madebymustafa)
 $genreDir = "$libraryRoot\skills\design-genres"
 if (Test-Path $genreDir) {
     Get-ChildItem -Path $genreDir -Directory | ForEach-Object {
@@ -36,7 +40,7 @@ if (Test-Path $genreDir) {
     }
 }
 
-# 6. UI/UX Pro Max Suite (nextlevelbuilder)
+# 7. UI/UX Pro Max Suite (nextlevelbuilder)
 $promaxDir = "$libraryRoot\skills\ui-ux-pro-max"
 if (Test-Path $promaxDir) {
     Get-ChildItem -Path $promaxDir -Directory | ForEach-Object {

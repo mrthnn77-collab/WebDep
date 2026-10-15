@@ -1,9 +1,17 @@
 {
   "name": "murathan-skills",
-  "version": "1.3.0",
-  "description": "Universal skill library for web design, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art",
+  "version": "1.4.0",
+  "description": "Universal skill library for web design, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
+    {
+      "id": "claude-design",
+      "name": "Awesome Claude Design & Remixes",
+      "path": "skills/claude-design",
+      "description": "Aesthetic families (cinematic, warm, glass, terminal, playful, etc.), hybrid two-brand remixes (Stripe x A24, Linear x Claude, etc.), and production recipes",
+      "tags": ["claude-design", "aesthetic-families", "remixes", "recipes", "hybrid-design"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
     {
       "id": "design-systems",
       "name": "Design Systems",

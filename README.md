@@ -1,12 +1,13 @@
 # 🧠 murathan-skills
 
-> Universal skill library for web design, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
+> Universal skill library for web design, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
 > Works with **Antigravity**, **Cursor**, and **OpenAI Codex**.
 
 ## 📦 Skills Architecture
 
 | Category | Source / Suite | Highlights & Included Skills |
 |---|---|---|
+| **Awesome Claude Design** | `skills/claude-design` | **Aesthetic Families & Hybrid Brand Remixes**: Stripe × A24, Linear × Claude, Mercury × Linear, Vercel × Pitchfork, plus 20-min landing page and 3D shader recipes |
 | **UI/UX Pro Max** | `skills/ui-ux-pro-max` | **Official nextlevelbuilder/ui-ux-pro-max-skill**: Full search engine, reasoning contract, Phosphor icon manifest, Google Font licenses, 22+ stack data sets, `ui-styling`, `banner-design`, `brand`, `design-system` |
 | **Design Systems** | `skills/design-systems` | Exact tokens from **80+ world brands** (Stripe, Apple, Vercel, Linear, Supabase, Ferrari…) |
 | **Design Genres & Craft** | `skills/design-genres` | **madebymustafa/design-taste (24 Skills)**: Editorial-minimal, quiet-luxury, dark-tech, cinematic-motion, retro-print, japanese-minimal, neo-brutalism, taste-gsap, taste-landing-page, etc. |
