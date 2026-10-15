@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
@@ -130,6 +130,14 @@
       "path": "skills/kokonut-ui",
       "description": "Physical & mechanical tactile components by kokonut-labs (kokonutui.com). Spring pull-cords, tactile rocker switches, detent dials, tearable perforated ticket buttons, hold-to-confirm triggers, receipt printer mechanisms, and liquid sliders",
       "tags": ["kokonut-ui", "tactile", "pull-cord", "switch-button", "detent-dial", "tear-button", "hold-button", "liquid-slider", "micro-interactions"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "fancy-components",
+      "name": "Fancy Components Physics & Kinetic Suite",
+      "path": "skills/fancy-components",
+      "description": "Physics-driven animations and kinetic UI by Daniel Petho (fancycomponents.dev). Rigid-body 2D gravity, magnetic cursor attractors, pluckable elastic harmonic strings, mechanical odometer number tickers, and cipher hover scramblers",
+      "tags": ["fancy-components", "physics", "gravity", "elastic-line", "number-ticker", "scramble-text", "kinetic", "matter-js"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]

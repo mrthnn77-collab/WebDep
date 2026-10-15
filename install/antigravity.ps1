@@ -82,4 +82,8 @@ Write-Host "  + [analog-ui] Studio Hyper-Skeuomorphic hardware controls (dials, 
 Copy-Item -Recurse -Force "$libraryRoot\skills\kokonut-ui" "$targetDir\kokonut-ui"
 Write-Host "  + [kokonut-ui] Tactile hardware (pull-cords, switch buttons, detent dials, tear tickets, hold latches)" -ForegroundColor Cyan
 
+# 16. Fancy Components Physics & Kinetic Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\fancy-components" "$targetDir\fancy-components"
+Write-Host "  + [fancy-components] Physics & kinetic mechanics (gravity, attractors, elastic lines, number ticker)" -ForegroundColor Magenta
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green
