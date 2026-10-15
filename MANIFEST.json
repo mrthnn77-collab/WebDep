@@ -1,9 +1,17 @@
 {
   "name": "murathan-skills",
-  "version": "1.5.0",
-  "description": "Universal skill library for web design, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
+  "version": "1.6.0",
+  "description": "Universal skill library for web design, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
+    {
+      "id": "design-md",
+      "name": "DESIGN.md & CLAUDE.md Design Contract Architect",
+      "path": "skills/design-md",
+      "description": "Creates, audits, and enforces DESIGN.md & CLAUDE.md design systems for AI agents (Claude, Cursor, Stitch, Codex). Features decision logic, value-intent-boundary tokens, explicit don'ts, and templates",
+      "tags": ["design-md", "claude-design", "design-system", "tokens", "constraints", "stitch"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
     {
       "id": "motion-principles",
       "name": "Design Motion Principles (kylezantos)",
