@@ -66,4 +66,8 @@ if (Test-Path $promaxDir) {
 Copy-Item -Recurse -Force "$libraryRoot\skills\skiper-ui" "$targetDir\skiper-ui"
 Write-Host "  + [skiper-ui] Un-common components (carousels, smooth caret, progressive blur, squircle)" -ForegroundColor Cyan
 
+# 12. Watermelon UI Full-Stack Platform Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\watermelon-ui" "$targetDir\watermelon-ui"
+Write-Host "  + [watermelon-ui] Full-stack suite (29 dashboards, audio waveforms, Web3, MCP)" -ForegroundColor Red
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

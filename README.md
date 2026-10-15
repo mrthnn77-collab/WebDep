@@ -19,6 +19,7 @@
 | **3D & Shaders** | `skills/3d-webgl` | Three.js, R3F, WebGPU/TSL, custom shaders |
 | **Generative Art** | `skills/generative-art` | Canvas, particle physics, organic fluid simulations |
 | **Skiper UI Uncommon Components** | `skills/skiper-ui` | **Skiper UI (`skiper-ui.com`)**: 37+ un-common craft components for shadcn/ui & Tailwind. Perspective 3D carousels, smooth caret inputs (canvas physics), progressive blur, Apple squircles, liquid gooey, card swipe stacks |
+| **Watermelon UI Platform Suite** | `skills/watermelon-ui` | **Watermelon UI (`ui.watermelon.sh`)**: 1000+ open-source components, 29 production dashboards (ERP, Web3, E-commerce, Invoicing), audio/waveform scrubbers, voice transcription cards, bento blocks, and native hosted MCP server (`mcp.watermelon.sh/mcp`) |
 
 ---
 
