@@ -70,4 +70,8 @@ Write-Host "  + [skiper-ui] Un-common components (carousels, smooth caret, progr
 Copy-Item -Recurse -Force "$libraryRoot\skills\watermelon-ui" "$targetDir\watermelon-ui"
 Write-Host "  + [watermelon-ui] Full-stack suite (29 dashboards, audio waveforms, Web3, MCP)" -ForegroundColor Red
 
+# 13. StyleUI Handmade Templates Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\style-ui" "$targetDir\style-ui"
+Write-Host "  + [style-ui] Handmade templates (React 19, Next 16, Tailwind v4, Base UI)" -ForegroundColor Yellow
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

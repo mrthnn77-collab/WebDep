@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art",
   "author": "mrthnn77-collab",
   "skills": [
@@ -106,6 +106,14 @@
       "path": "skills/watermelon-ui",
       "description": "Production-ready open-source React components, animated micro-interactions, full-page blocks, 29 complete dashboards (ERP, E-commerce, Web3, SaaS), audio/voice scrubbers, and native Watermelon MCP integration for shadcn/ui & Tailwind CSS",
       "tags": ["watermelon-ui", "dashboards", "audio-waveform", "voice-note", "web3", "uniswap", "blocks", "bento", "mcp-server"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "style-ui",
+      "name": "StyleUI Handmade Templates & Blocks Suite",
+      "path": "skills/style-ui",
+      "description": "Handmade, modern landing page templates (Notio AI Voice, Axis SaaS) and modular blocks built on React 19, Next.js 16, Tailwind CSS 4, Motion, and Base UI primitives by Ras Mic & Fabrika team",
+      "tags": ["style-ui", "templates", "react-19", "nextjs-16", "tailwind-v4", "base-ui", "notio", "axis", "falling-pattern", "orbs"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]
