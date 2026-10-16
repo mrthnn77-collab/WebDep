@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.13.0",
+  "version": "1.16.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
@@ -138,6 +138,30 @@
       "path": "skills/fancy-components",
       "description": "Physics-driven animations and kinetic UI by Daniel Petho (fancycomponents.dev). Rigid-body 2D gravity, magnetic cursor attractors, pluckable elastic harmonic strings, mechanical odometer number tickers, and cipher hover scramblers",
       "tags": ["fancy-components", "physics", "gravity", "elastic-line", "number-ticker", "scramble-text", "kinetic", "matter-js"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "motion-primitives",
+      "name": "Motion Primitives Layout Morphing & Gestures Suite",
+      "path": "skills/motion-primitives",
+      "description": "Polished motion components and micro-interactions by Julien Thibeaut (motion-primitives.com). Morphing dialogs, popovers, dynamic docks, sliding odometer numbers, SVG text morphing, magnetic cursor attractors, border trails, progressive blur, and spotlights",
+      "tags": ["motion-primitives", "morphing-dialog", "dock", "sliding-number", "text-morph", "magnetic", "spotlight", "border-trail"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "manus-agent",
+      "name": "Manus Autonomous Agent & Multi-Agency Suite",
+      "path": "skills/manus-agent",
+      "description": "Autonomous agent engineering, multi-agent agency roles (UI Designer, UX Architect, Rapid Prototyper, Reality Checker), perception-planning-action execution loop, browser automation, and high-density telemetry UI components",
+      "tags": ["manus", "openmanus", "autonomous-agent", "execution-loop", "agency-skills", "browser-automation", "telemetry-tree"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "haikei-svg",
+      "name": "Haikei Procedural SVG & Organic Wave Generator Suite",
+      "path": "skills/haikei-svg",
+      "description": "Generative mathematical vector geometry engines inspired by haikei.app & blobmaker.app. Polar-coordinate organic cubic Bézier blobs, multi-layered harmonic wave dividers, SVG fractal grain masks, and blurry gradient mesh backgrounds",
+      "tags": ["haikei", "blobmaker", "svg-generator", "organic-blob", "layered-waves", "fractal-grain", "blurry-gradient", "vector-geometry"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]

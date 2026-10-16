@@ -86,4 +86,16 @@ Write-Host "  + [kokonut-ui] Tactile hardware (pull-cords, switch buttons, deten
 Copy-Item -Recurse -Force "$libraryRoot\skills\fancy-components" "$targetDir\fancy-components"
 Write-Host "  + [fancy-components] Physics & kinetic mechanics (gravity, attractors, elastic lines, number ticker)" -ForegroundColor Magenta
 
+# 17. Motion Primitives Layout Morphing & Gestures Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\motion-primitives" "$targetDir\motion-primitives"
+Write-Host "  + [motion-primitives] Motion Primitives (33 components, morphing-dialog, dock, sliding-number)" -ForegroundColor Yellow
+
+# 18. Manus Autonomous Agent Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\manus-agent" "$targetDir\manus-agent"
+Write-Host "  + [manus-agent] Manus Autonomous Agent Suite (9 agency roles, execution loops, telemetry UI)" -ForegroundColor Cyan
+
+# 19. Haikei Procedural SVG & Organic Wave Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\haikei-svg" "$targetDir\haikei-svg"
+Write-Host "  + [haikei-svg] Haikei Procedural SVG Suite (organic blobs, layered waves, grain filters)" -ForegroundColor Green
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

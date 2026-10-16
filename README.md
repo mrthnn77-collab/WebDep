@@ -24,6 +24,9 @@
 | **Analog UI Studio Hyper-Skeuomorphism** | `skills/analog-ui` | **Analog UI (`analogui.com` / TechSquidTV)**: Studio Hyper-Skeuomorphic hardware controls. Dynamic physical lighting engine (`useAnalogLighting`), machined aluminium dials, linear faders, VU needle meters, LED bar meters, rocker switches, rotary selectors, and rack mount panels |
 | **Kokonut UI Tactile Hardware** | `skills/kokonut-ui` | **Kokonut UI (`kokonutui.com`)**: Tactile hardware micro-interactions. Pull-cords with spring-damper tension, tactile rocker switches, detent dials, tearable tickets, hold-to-confirm triggers, and receipt printer feed |
 | **Fancy Components Physics & Kinetic** | `skills/fancy-components` | **Fancy Components (`fancycomponents.dev`)**: Physics-driven micro-interactions by Daniel Petho. 2D rigid-body gravity, magnetic cursor attractors, pluckable elastic harmonic strings, mechanical odometer tickers, and hover scramblers |
+| **Motion Primitives Suite** | `skills/motion-primitives` | **Motion Primitives (`motion-primitives.com` / Julien Thibeaut)**: 33 production motion components. Apple-style morphing dialogs, popovers, dynamic docks, sliding odometer numbers, SVG text morphing, magnetic hover, and border trails |
+| **Manus Autonomous Agent Suite** | `skills/manus-agent` | **Manus AI & OpenManus**: Autonomous perception-planning-action loop, browser automation contracts, multi-agent agency roles (UI Designer, UX Architect, Rapid Prototyper, Reality Checker), and high-density telemetry UI components |
+| **Haikei Procedural SVG Suite** | `skills/haikei-svg` | **Haikei (`haikei.app` & `blobmaker.app`)**: Generative mathematical vector engines. Polar-coordinate organic cubic Bézier blobs, multi-layered harmonic wave dividers, fractal grain masks, and blurry gradient mesh backgrounds |
 
 ---
 
