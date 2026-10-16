@@ -98,4 +98,12 @@ Write-Host "  + [manus-agent] Manus Autonomous Agent Suite (9 agency roles, exec
 Copy-Item -Recurse -Force "$libraryRoot\skills\haikei-svg" "$targetDir\haikei-svg"
 Write-Host "  + [haikei-svg] Haikei Procedural SVG Suite (organic blobs, layered waves, grain filters)" -ForegroundColor Green
 
+# 20. SiteReel Vibe Coding Engine
+Copy-Item -Recurse -Force "$libraryRoot\skills\sitereel-vibe" "$targetDir\sitereel-vibe"
+Write-Host "  + [sitereel-vibe] SiteReel Vibe Coding Engine (5-layer aesthetic prompt contracts)" -ForegroundColor Yellow
+
+# 21. 21st.dev Design Engineer Suite
+Copy-Item -Recurse -Force "$libraryRoot\skills\21st-dev" "$targetDir\21st-dev"
+Write-Host "  + [21st-dev] 21st.dev Design Engineer Suite (10,000+ components, CLI, MCP Server)" -ForegroundColor DarkCyan
+
 Write-Host ">>> Tüm skiller Antigravity'e başarıyla yüklendi!" -ForegroundColor Green

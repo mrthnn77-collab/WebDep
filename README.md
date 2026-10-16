@@ -27,6 +27,8 @@
 | **Motion Primitives Suite** | `skills/motion-primitives` | **Motion Primitives (`motion-primitives.com` / Julien Thibeaut)**: 33 production motion components. Apple-style morphing dialogs, popovers, dynamic docks, sliding odometer numbers, SVG text morphing, magnetic hover, and border trails |
 | **Manus Autonomous Agent Suite** | `skills/manus-agent` | **Manus AI & OpenManus**: Autonomous perception-planning-action loop, browser automation contracts, multi-agent agency roles (UI Designer, UX Architect, Rapid Prototyper, Reality Checker), and high-density telemetry UI components |
 | **Haikei Procedural SVG Suite** | `skills/haikei-svg` | **Haikei (`haikei.app` & `blobmaker.app`)**: Generative mathematical vector engines. Polar-coordinate organic cubic Bézier blobs, multi-layered harmonic wave dividers, fractal grain masks, and blurry gradient mesh backgrounds |
+| **SiteReel Vibe Coding Engine** | `skills/sitereel-vibe` | **SiteReel (`sitereel.ai`)**: Vibe coding prompt architecture & motion-heavy website reel blueprints. 5-layer prompt contracts, kinetic typography, luxury bento layouts, and anti-AI-slop constraints |
+| **21st.dev Design Engineer Suite** | `skills/21st-dev` | **21st.dev (`21st.dev`)**: The npm for Design Engineers. 10,000+ curated React/Tailwind components, CLI tooling (`@21st-dev/cli`), SVG brand logos, and native unified 21st MCP server integration (`https://21st.dev/api/mcp`) |
 
 ---
 

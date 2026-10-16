@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.16.0",
+  "version": "1.18.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
@@ -162,6 +162,22 @@
       "path": "skills/haikei-svg",
       "description": "Generative mathematical vector geometry engines inspired by haikei.app & blobmaker.app. Polar-coordinate organic cubic Bézier blobs, multi-layered harmonic wave dividers, SVG fractal grain masks, and blurry gradient mesh backgrounds",
       "tags": ["haikei", "blobmaker", "svg-generator", "organic-blob", "layered-waves", "fractal-grain", "blurry-gradient", "vector-geometry"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "sitereel-vibe",
+      "name": "SiteReel Vibe Coding & Motion Reel Engine",
+      "path": "skills/sitereel-vibe",
+      "description": "Vibe coding prompt architecture & motion-heavy website reel blueprints inspired by sitereel.ai. Curated aesthetic contracts, luxury bento layouts, kinetic typography, and anti-AI-slop design constraints for AI builders",
+      "tags": ["sitereel", "vibe-coding", "prompts", "motion-reels", "kinetic-typography", "bento-grids", "anti-slop"],
+      "formats": ["antigravity", "cursor", "codex"]
+    },
+    {
+      "id": "21st-dev",
+      "name": "21st.dev Design Engineer Registry & MCP Suite",
+      "path": "skills/21st-dev",
+      "description": "The npm for Design Engineers (21st.dev). 10,000+ curated React, Tailwind CSS, and shadcn-compatible components, brand SVG logo search, CLI tooling (@21st-dev/cli), and native unified 21st MCP server integration",
+      "tags": ["21st-dev", "marketplace", "registry", "shadcn", "magic-mcp", "cli", "logo-search", "design-engineers"],
       "formats": ["antigravity", "cursor", "codex"]
     }
   ]
