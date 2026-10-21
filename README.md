@@ -1,4 +1,4 @@
-# 🧠 murathan-skills
+# 🧠 mmv-skills
 
 > Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, animation, taste engineering, UI-UX Pro Max, 3D & generative art.  
 > Works with **Antigravity**, **Cursor**, and **OpenAI Codex**.
