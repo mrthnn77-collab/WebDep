@@ -1,4 +1,33 @@
+# Environment & Secrets (Strict Prevention)
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+secrets.json
+credentials.json
+api_keys.*
+
+# Operating System
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Dependencies & Build
 node_modules/
+dist/
+build/
 *.log
+__pycache__/
+*.pyc
+.cache/
