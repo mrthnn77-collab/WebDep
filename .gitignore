@@ -31,3 +31,24 @@ build/
 __pycache__/
 *.pyc
 .cache/
+
+# --- Security: never commit secrets or local data ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.keystore
+credentials*.json
+service-account*.json
+*.db
+*.sqlite
+*.sqlite3
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
