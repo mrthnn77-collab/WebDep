@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.20.0",
+  "version": "1.19.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
@@ -469,112 +469,6 @@
         "claude-code"
       ],
       "source": "https://github.com/Jakeschincariol/replica-skill",
-      "license": "MIT"
-    },
-    {
-      "id": "lemo-wake",
-      "name": "lemo-wake — Photo to Motion (Lemomo, CC BY-NC 4.0)",
-      "path": "skills/youtube-video/lemo-wake",
-      "description": "Wake a still image: GIF, WebP, motion poster, cinemagraph. NON-COMMERCIAL license",
-      "tags": [
-        "image-to-motion",
-        "gif",
-        "cinemagraph",
-        "avatar",
-        "youtube"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex",
-        "claude-code"
-      ],
-      "source": "https://github.com/lemomo-ai/lemo-wake",
-      "license": "CC-BY-NC-4.0"
-    },
-    {
-      "id": "animation-styles",
-      "name": "Animation Styles — 39 Remotion Styles (Deenu Khan, MIT)",
-      "path": "skills/youtube-video/animation-styles",
-      "description": "39 animation styles drawn in code with Remotion, each with a ready 5-second sample film",
-      "tags": [
-        "remotion",
-        "animation",
-        "styles",
-        "video",
-        "youtube"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex",
-        "claude-code"
-      ],
-      "source": "https://github.com/deenukhan/animation-styles",
-      "license": "MIT"
-    },
-    {
-      "id": "ui-redline-walkthrough",
-      "name": "UI Redline Walkthrough (rjmahesh, MIT)",
-      "path": "skills/youtube-video/ui-redline-walkthrough",
-      "description": "Turns before/after UI screenshots into an animated red-ink redline walkthrough (HTML + MP4)",
-      "tags": [
-        "ui",
-        "redline",
-        "walkthrough",
-        "video",
-        "before-after",
-        "youtube"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex",
-        "claude-code"
-      ],
-      "source": "https://github.com/rjmahesh/ui-redline-walkthrough",
-      "license": "MIT"
-    },
-    {
-      "id": "open-3d-skills",
-      "name": "Open 3D Skills (exploraX, MIT)",
-      "path": "skills/youtube-video/open-3d-skills",
-      "description": "8 skills: three.js scenes, scroll films, transparent video, cursor rigs, exploded views, motion assets, site checks, frame capture",
-      "tags": [
-        "threejs",
-        "3d",
-        "scroll-film",
-        "exploded-view",
-        "video",
-        "youtube"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex",
-        "claude-code"
-      ],
-      "source": "https://github.com/Moh4696/open-3d-skills",
-      "license": "MIT"
-    },
-    {
-      "id": "rossark-motion-skill",
-      "name": "Rossark Motion Skill (rossark0, MIT)",
-      "path": "skills/youtube-video/rossark-motion-skill",
-      "description": "Bring anything drawn to life with calm, believable motion: characters, charts, whole scenes",
-      "tags": [
-        "motion",
-        "character-animation",
-        "illustration",
-        "youtube"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex",
-        "claude-code"
-      ],
-      "source": "https://github.com/rossark0/rossark-motion-skill",
       "license": "MIT"
     }
   ]
