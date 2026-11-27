@@ -1,9 +1,702 @@
 {
-  "name": "murathan-skills",
-  "version": "1.19.0",
-  "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
+  "name": "webdep",
+  "version": "2.0.0",
+  "description": "WebDep: one-command website builder for Claude Code and other agents. A director skill (webdep) orchestrating 120+ design, build, motion, quality and deploy skills.",
   "author": "mrthnn77-collab",
   "skills": [
+    {
+      "id": "webdep",
+      "name": "WebDep — Website Builder Director",
+      "path": "skills/webdep",
+      "description": "One-command website builder that orchestrates 120+ design, build, motion, quality and deploy skills. Use when someone says \"build me a website/landing page/portfolio/store/blog\", \"make my site look better\", \"redesign this site\", \"make a site like X but mine\", or \"/webdep\". Asks a few multiple-choice ",
+      "tags": [
+        "website",
+        "builder",
+        "orchestrator"
+      ],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "frontend-design",
+      "name": "frontend-design",
+      "path": "skills/frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/anthropics/skills",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "path": "skills/web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/anthropics/skills",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "webapp-testing",
+      "name": "webapp-testing",
+      "path": "skills/webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/anthropics/skills",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "theme-factory",
+      "name": "theme-factory",
+      "path": "skills/theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/anthropics/skills",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "impeccable",
+      "name": "impeccable",
+      "path": "skills/impeccable",
+      "description": "Use to design, redesign, critique, audit, polish or animate a frontend: websites, landing pages, dashboards, app UI, components, native iOS/Android screens, or a design system (DESIGN.md).",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/pbakaus/impeccable",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "web-design-guidelines",
+      "name": "web-design-guidelines",
+      "path": "skills/web-design-guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "react-best-practices",
+      "name": "react-best-practices",
+      "path": "skills/react-best-practices",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization,",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "composition-patterns",
+      "name": "composition-patterns",
+      "path": "skills/composition-patterns",
+      "description": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19 AP",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "react-view-transitions",
+      "name": "react-view-transitions",
+      "path": "skills/react-view-transitions",
+      "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animat",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "deploy-to-vercel",
+      "name": "deploy-to-vercel",
+      "path": "skills/deploy-to-vercel",
+      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "emil-design-eng",
+      "name": "emil-design-eng",
+      "path": "skills/emil-design-eng",
+      "description": "Emil Kowalski's design-engineering philosophy for UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when building or reviewing a UI component's interactions and polish (press and hover states, popover origin, tooltip timing, transitions vs",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "animate",
+      "name": "animate",
+      "path": "skills/animate",
+      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something,",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "improve-animations",
+      "name": "improve-animations",
+      "path": "skills/improve-animations",
+      "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"imp",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "review-animations",
+      "name": "review-animations",
+      "path": "skills/review-animations",
+      "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "animation-vocabulary",
+      "name": "animation-vocabulary",
+      "path": "skills/animation-vocabulary",
+      "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without know",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "animation-performance",
+      "name": "animation-performance",
+      "path": "skills/animation-performance",
+      "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "find-animation-opportunities",
+      "name": "find-animation-opportunities",
+      "path": "skills/find-animation-opportunities",
+      "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animat",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "choreograph",
+      "name": "choreograph",
+      "path": "skills/choreograph",
+      "description": "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "gestures",
+      "name": "gestures",
+      "path": "skills/gestures",
+      "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "learn-taste",
+      "name": "learn-taste",
+      "path": "skills/learn-taste",
+      "description": "Turn a session's design corrections into rules, with their why, in DESIGN.md, a project skill, or a lint check.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "pick-ui-library",
+      "name": "pick-ui-library",
+      "path": "skills/pick-ui-library",
+      "description": "Pick the library for a frontend task from a curated list — primitives, toasts, drawers, command menus, OTP, numbers, charts, virtualization, drag and drop, state, styling.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "prototype",
+      "name": "prototype",
+      "path": "skills/prototype",
+      "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right.",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "break-ui",
+      "name": "break-ui",
+      "path": "skills/break-ui",
+      "description": "Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with t",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "apple-design",
+      "name": "apple-design",
+      "path": "skills/apple-design",
+      "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "remove-animations",
+      "name": "remove-animations",
+      "path": "skills/remove-animations",
+      "description": "Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the a",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/emilkowalski/skills",
+      "license": "MIT"
+    },
+    {
+      "id": "web-quality-audit",
+      "name": "web-quality-audit",
+      "path": "skills/web-quality-audit",
+      "description": "Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to \"audit my site\", \"review web quality\", \"run lighthouse audit\", \"check page quality\", or \"optimize my website\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "accessibility",
+      "name": "accessibility",
+      "path": "skills/accessibility",
+      "description": "Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to \"improve accessibility\", \"a11y audit\", \"WCAG compliance\", \"screen reader support\", \"keyboard navigation\", or \"make accessible\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "seo",
+      "name": "seo",
+      "path": "skills/seo",
+      "description": "Optimize for search engine visibility and ranking. Use when asked to \"improve SEO\", \"optimize for search\", \"fix meta tags\", \"add structured data\", \"sitemap optimization\", or \"search engine optimization\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "performance",
+      "name": "performance",
+      "path": "skills/performance",
+      "description": "Optimize web performance for faster loading and better user experience. Use when asked to \"speed up my site\", \"optimize performance\", \"reduce load time\", \"fix slow loading\", \"improve page speed\", or \"performance audit\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "core-web-vitals",
+      "name": "core-web-vitals",
+      "path": "skills/core-web-vitals",
+      "description": "Optimize Core Web Vitals (LCP, INP, CLS) for better page experience using field and lab evidence. Use when asked to \"improve Core Web Vitals\", \"fix LCP\", \"reduce CLS\", \"optimize INP\", \"page experience optimization\", or \"fix layout shifts\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "best-practices",
+      "name": "best-practices",
+      "path": "skills/best-practices",
+      "description": "Apply modern web development best practices for security, compatibility, and code quality. Use when asked to \"apply best practices\", \"security audit\", \"modernize code\", \"code quality review\", or \"check for vulnerabilities\".",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "license": "MIT"
+    },
+    {
+      "id": "extract-design",
+      "name": "extract-design",
+      "path": "skills/extract-design",
+      "description": "Extract the full design language from any website URL. Produces 8 output files including AI-optimized markdown, visual HTML preview, Tailwind config, React theme, shadcn/ui theme, Figma variables, W3C design tokens, and CSS variables. Also runs WCAG accessibility scoring. Use when user says 'extract",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Manavarya09/design-extract",
+      "license": "MIT"
+    },
+    {
+      "id": "scroll-craft",
+      "name": "scroll-craft",
+      "path": "skills/scroll-craft",
+      "description": "Build premium scroll-driven landing pages for service, product, food, and drink brands. Plan the visitor journey, page grammar, emotional peak, and bespoke signature move. Create dimensional heroes with independent visual planes, restrained motion, and separate mobile composition. Use supplied photo",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/nateherkai/scroll-craft",
+      "license": "MIT"
+    },
+    {
+      "id": "shadcn",
+      "name": "shadcn",
+      "path": "skills/shadcn",
+      "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/shadcn-ui/ui",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-recon",
+      "name": "replica-recon",
+      "path": "skills/replica-recon",
+      "description": "- Reverse-engineers any app into a recon map: screen inventory, user flows, component list, inferred data model and a feature matrix, from public pages, screenshots, app store listings, help docs and the user's own account. The first step of the Replica pack. Use when the user says \"clone this app\",",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-architect",
+      "name": "replica-architect",
+      "path": "skills/replica-architect",
+      "description": "- Plans the stack, database schema and API for an app clone, from the recon map replica-recon wrote. Picks boring, managed tech, turns the inferred data model into real SQL with indexes and access rules, lists every route by flow, and orders the build as a thin vertical slice first. Use when the use",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-design",
+      "name": "replica-design",
+      "path": "skills/replica-design",
+      "description": "- Rebuilds an app's design system for a clone: colour roles, type scale, spacing, radius, shadows and every component with its states, as design tokens plus component specs, with original assets instead of the target's logos, icons, illustrations or licensed fonts. Includes a WCAG contrast checker. ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-build",
+      "name": "replica-build",
+      "path": "skills/replica-build",
+      "description": "- Rebuilds an app screen by screen from the recon map: app shell first, then the core flow as a vertical slice, then every screen with all its states, ticking off the feature matrix as it goes. Writes every line fresh, never the original's code, assets or copy. Use when the user says \"build the clon",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-backend",
+      "name": "replica-backend",
+      "path": "skills/replica-backend",
+      "description": "- Builds the backend of an app clone: auth, database migrations and access rules, payments with Stripe, email, background jobs and third-party integrations through official APIs only, plus a security checklist. Use when the user says \"add login\", \"set up auth\", \"wire up the database\", \"add payments\"",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-test",
+      "name": "replica-test",
+      "path": "skills/replica-test",
+      "description": "- Clicks through every flow of an app clone and tests it for bugs: a test plan generated from the recon flows with happy paths and edge cases, Playwright end-to-end tests where possible, a browser click-through where not, and bug reports in a fixed format with severity, steps and evidence. Use when ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-diff",
+      "name": "replica-diff",
+      "path": "skills/replica-diff",
+      "description": "- Compares an app clone against the original: a feature parity score from the feature matrix (weighted by must, should, could) with the missing list in build order, plus a screenshot layout diff that ignores colour so a rebrand does not count against you. Two standard-library Python tools. Use when ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-brand",
+      "name": "replica-brand",
+      "path": "skills/replica-brand",
+      "description": "- Names and rebrands an app clone so it is the user's own: name candidates with the trademark, domain, store and handle checks to run, a new palette checked for contrast, a logo brief, a voice guide, and a sweep tool that finds anything of the original left in the codebase. Use when the user says \"n",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-entrepreneur",
+      "name": "replica-entrepreneur",
+      "path": "skills/replica-entrepreneur",
+      "description": "- Researches the app being cloned and reads what its real users say in public reviews (App Store, Google Play, G2, Capterra, Trustpilot, Reddit, Hacker News, its own feature-request board), then ranks what they hate, what is missing and what is unsolved, turns it into a fix plan for the clone and a ",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-launch",
+      "name": "replica-launch",
+      "path": "skills/replica-launch",
+      "description": "- Writes the launch for an app clone: the landing page built on the positioning angle, pricing set against the original's public pricing and its users' complaints, and the App Store and Google Play listing linted against the stores' limits and copycat rules. Use when the user says \"landing page\", \"p",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
+    {
+      "id": "replica-deploy",
+      "name": "replica-deploy",
+      "path": "skills/replica-deploy",
+      "description": "- Ships an app clone live on the user's own domain: a preflight gate (tests green, parity must-haves done, rebrand sweep clean, listing linted, legal pages up), production database and env vars, the host, DNS records for the domain and for email, Stripe live mode, OAuth redirects, monitoring, and mo",
+      "tags": [],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
+    },
     {
       "id": "site-dna-extractor",
       "name": "Site DNA Extractor & Reverse-Engineering Engine",
@@ -446,30 +1139,6 @@
         "cursor",
         "codex"
       ]
-    },
-    {
-      "id": "replica-skill",
-      "name": "Replica Skill — App Clone Pipeline (Jake Schincariol, MIT)",
-      "path": "skills/replica-skill",
-      "description": "11 skills that reverse-engineer, rebuild, test, rebrand and deploy a clean-room clone of any app's features and flows: recon, architect, design, build, backend, test, diff, brand, entrepreneur, launch, deploy. Never copies code, logos, copy or content",
-      "tags": [
-        "replica",
-        "clone",
-        "reverse-engineer",
-        "clean-room",
-        "recon",
-        "launch",
-        "deploy",
-        "entrepreneur"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex",
-        "claude-code"
-      ],
-      "source": "https://github.com/Jakeschincariol/replica-skill",
-      "license": "MIT"
     }
   ]
 }

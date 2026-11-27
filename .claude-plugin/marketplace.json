@@ -1,0 +1,7 @@
+{
+  "name": "webdep",
+  "owner": { "name": "mrthnn77-collab" },
+  "plugins": [
+    { "name": "webdep", "source": "./", "description": "One-command website builder with 120+ design, build, motion, quality and deploy skills." }
+  ]
+}

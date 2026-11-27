@@ -1,0 +1,10 @@
+{
+  "name": "webdep",
+  "version": "2.0.0",
+  "description": "One-command website builder: a director skill that asks a few questions, then orchestrates design, build, motion, polish, testing, quality audit and deploy skills to make a distinctive, tested site.",
+  "author": { "name": "mrthnn77-collab", "url": "https://github.com/mrthnn77-collab" },
+  "homepage": "https://github.com/mrthnn77-collab/WebDep",
+  "repository": "https://github.com/mrthnn77-collab/WebDep",
+  "license": "MIT (webdep) + see THIRD_PARTY.md",
+  "keywords": ["website", "web-design", "frontend", "landing-page", "tailwind", "shadcn", "nextjs", "animation", "accessibility", "seo"]
+}

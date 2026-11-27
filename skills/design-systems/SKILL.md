@@ -53,7 +53,7 @@ Ask the user which vibe they want, or pick the closest brand match:
 ### Step 2: Read the DESIGN.md
 Always read the relevant DESIGN.md before generating any code:
 ```
-$HOME\.gemini\antigravity\skills\professional-web-design\design-md\{brand}\DESIGN.md
+design-md/{brand}/DESIGN.md   (relative to this skill folder)
 ```
 
 ### Step 3: Apply tokens faithfully
