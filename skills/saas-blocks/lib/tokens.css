@@ -1,0 +1,46 @@
+/*
+  SaaS Blocks design tokens. Every block reads ONLY these variables,
+  so one DESIGN.md → one :root block restyles the whole page.
+  Replace the values with the project's DESIGN.md tokens.
+*/
+:root {
+  --sb-bg: #fbfaf7;
+  --sb-surface: #ffffff;
+  --sb-fg: #141414;
+  --sb-muted: #6b6b6b;
+  --sb-border: #e7e4dd;
+  --sb-accent: #2f5bff;
+  --sb-accent-fg: #ffffff;
+  --sb-radius: 14px;
+  --sb-font-display: "Instrument Serif", Georgia, serif;
+  --sb-font-body: "Inter Tight", system-ui, sans-serif;
+  --sb-max: 1160px;
+  --sb-ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+[data-theme="dark"] {
+  --sb-bg: #0c0d0f;
+  --sb-surface: #15171a;
+  --sb-fg: #f1f1ee;
+  --sb-muted: #9a9ca1;
+  --sb-border: #26292e;
+  --sb-accent: #7c9bff;
+  --sb-accent-fg: #0c0d0f;
+}
+
+.sb-container { max-width: var(--sb-max); margin-inline: auto; padding-inline: clamp(16px, 4vw, 32px); }
+.sb-display { font-family: var(--sb-font-display); letter-spacing: -.02em; line-height: 1.02; }
+.sb-body { font-family: var(--sb-font-body); }
+.sb-btn { display: inline-flex; align-items: center; gap: .5em; border-radius: 999px; padding: .8em 1.3em; font-weight: 600; transition: transform .2s var(--sb-ease), background .2s; }
+.sb-btn:active { transform: scale(.97); }
+.sb-btn--primary { background: var(--sb-accent); color: var(--sb-accent-fg); }
+.sb-btn--ghost { border: 1px solid var(--sb-border); color: var(--sb-fg); }
+.sb-btn:focus-visible, .sb-focus:focus-visible { outline: 2px solid var(--sb-accent); outline-offset: 3px; }
+.sb-card { background: var(--sb-surface); border: 1px solid var(--sb-border); border-radius: var(--sb-radius); }
+.sb-reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--sb-ease), transform .7s var(--sb-ease); }
+.sb-reveal.is-in { opacity: 1; transform: none; }
+@keyframes sb-marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .sb-reveal { opacity: 1; transform: none; transition: none; }
+  .sb-marquee-track { animation: none !important; }
+}

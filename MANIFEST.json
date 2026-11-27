@@ -1,6 +1,6 @@
 {
   "name": "webdep",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "WebDep: one-command website builder for Claude Code and other agents. A director skill (webdep) orchestrating 120+ design, build, motion, quality and deploy skills.",
   "author": "mrthnn77-collab",
   "skills": [
@@ -13,6 +13,57 @@
         "website",
         "builder",
         "orchestrator"
+      ],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "tactile-hardware-ui",
+      "name": "Tactile Hardware UI",
+      "path": "skills/tactile-hardware-ui",
+      "description": "Original skeuomorphic controls: knobs, faders, VU and LED meters, rocker switches, rack panels with shared lighting",
+      "tags": [
+        "components",
+        "react"
+      ],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "craft-interactions",
+      "name": "Craft Interactions",
+      "path": "skills/craft-interactions",
+      "description": "Original micro-interactions: progressive blur, smooth caret input, coverflow, squircle, animated links, swipe stack, scroll fade, magnetic, text scramble",
+      "tags": [
+        "components",
+        "react"
+      ],
+      "formats": [
+        "claude-code",
+        "antigravity",
+        "cursor",
+        "codex"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "saas-blocks",
+      "name": "SaaS Blocks — landing page sections",
+      "path": "skills/saas-blocks",
+      "description": "Original token-driven landing sections: navbar, hero, logo marquee, bento, stats, testimonials, pricing, FAQ, CTA, footer",
+      "tags": [
+        "components",
+        "react"
       ],
       "formats": [
         "claude-code",
@@ -907,27 +958,6 @@
       ]
     },
     {
-      "id": "skiper-ui",
-      "name": "Skiper UI Un-common Components Suite",
-      "path": "skills/skiper-ui",
-      "description": "Un-common, micro-interaction-driven React & Next.js components for shadcn/ui, Tailwind CSS, Framer Motion, and GSAP. 37+ registry components including perspective carousels, smooth caret inputs, progressive blur, Apple squircles, and card swipe stacks",
-      "tags": [
-        "skiper-ui",
-        "shadcn",
-        "micro-interactions",
-        "uncommon-components",
-        "framer-motion",
-        "gsap",
-        "springs",
-        "canvas-caret"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex"
-      ]
-    },
-    {
       "id": "watermelon-ui",
       "name": "Watermelon UI Full-Stack Platform Suite",
       "path": "skills/watermelon-ui",
@@ -942,51 +972,6 @@
         "blocks",
         "bento",
         "mcp-server"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex"
-      ]
-    },
-    {
-      "id": "style-ui",
-      "name": "StyleUI Handmade Templates & Blocks Suite",
-      "path": "skills/style-ui",
-      "description": "Handmade, modern landing page templates (Notio AI Voice, Axis SaaS) and modular blocks built on React 19, Next.js 16, Tailwind CSS 4, Motion, and Base UI primitives by Ras Mic & Fabrika team",
-      "tags": [
-        "style-ui",
-        "templates",
-        "react-19",
-        "nextjs-16",
-        "tailwind-v4",
-        "base-ui",
-        "notio",
-        "axis",
-        "falling-pattern",
-        "orbs"
-      ],
-      "formats": [
-        "antigravity",
-        "cursor",
-        "codex"
-      ]
-    },
-    {
-      "id": "analog-ui",
-      "name": "Analog UI Studio Hyper-Skeuomorphism Suite",
-      "path": "skills/analog-ui",
-      "description": "Studio Hyper-Skeuomorphic tactile & mechanical hardware controls by TechSquidTV. Dynamic physical lighting engine (useAnalogLighting), machined aluminium dials, studio faders, VU needle meters, LED bar meters, rocker switches, rotary selectors, and hardware chassis panels",
-      "tags": [
-        "analog-ui",
-        "skeuomorphism",
-        "mechanical",
-        "hardware-ui",
-        "lighting-engine",
-        "dials",
-        "faders",
-        "vu-meters",
-        "rocker-switches"
       ],
       "formats": [
         "antigravity",

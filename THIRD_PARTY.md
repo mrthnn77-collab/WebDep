@@ -1,6 +1,6 @@
 # Third-party skills & credits
 
-`skills/webdep` (the director skill), the install scripts and this repo's documentation are MIT © 2026 mrthnn77-collab.
+`skills/webdep` (the director skill), `skills/saas-blocks`, `skills/craft-interactions`, `skills/tactile-hardware-ui`, the install scripts and this repo's documentation are MIT © 2026 mrthnn77-collab.
 
 Most other skills in this repo are copies of open-source work by other people. Each imported folder keeps its original license file. All credit belongs to the original authors — star and follow their repos for updates.
 
@@ -29,10 +29,7 @@ These folders were added before this release. Their sources are credited as belo
 | `design-genres` | madebymustafa/design-taste |
 | `taste-suite` | Leonxlnx/taste-skill |
 | `creative-engine` | Genjutsu (`LICENSE` included) |
-| `skiper-ui` | skiper-ui.com |
 | `watermelon-ui` | ui.watermelon.sh |
-| `style-ui` | styleui.dev |
-| `analog-ui` | analogui.com / TechSquidTV |
 | `kokonut-ui` | kokonutui.com |
 | `fancy-components` | fancycomponents.dev — Daniel Petho |
 | `motion-primitives` | motion-primitives.com — Julien Thibeaut |

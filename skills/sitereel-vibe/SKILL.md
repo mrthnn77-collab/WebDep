@@ -76,5 +76,5 @@ Create a dark-tech developer platform landing page for an edge compute network.
 When executing a vibe prompt:
 1. Initialize design tokens in CSS variables (`--bg`, `--card`, `--border`, `--accent`).
 2. Scaffold semantic layout (`header`, `main`, `section`, `footer`).
-3. Embed tactile craft components from `analog-ui`, `kokonut-ui`, and `motion-primitives`.
+3. Embed tactile craft components from `tactile-hardware-ui`, `craft-interactions`, `kokonut-ui`, and `motion-primitives`.
 4. Run live verification with realistic domain data and zero pixelated assets.

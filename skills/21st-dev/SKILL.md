@@ -67,4 +67,4 @@ npx @21st-dev/cli@latest add <component-name>
 2. **Match Project Design Systems:**
    - When importing a 21st component, adapt its tailwind classes and CSS variables to match your project's active `DESIGN.md` contract.
 3. **Combine Micro-Interactions:**
-   - Pair 21st layout blocks with `analog-ui` hardware controls or `kokonut-ui` tactile switches for bespoke craft.
+   - Pair 21st layout blocks with `tactile-hardware-ui` controls or `kokonut-ui` tactile switches for bespoke craft.

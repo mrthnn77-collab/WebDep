@@ -64,7 +64,10 @@ Follow `references/build-recipes.md` for the chosen stack. Core skills:
 | Art direction & distinctive layout | `frontend-design`, `impeccable` (`shape`, `craft`) |
 | Single-file / artifact React app | `web-artifacts-builder` |
 | Next.js + components | `shadcn`, `react-best-practices`, `composition-patterns` |
-| Ready-made craft components | `21st-dev`, `skiper-ui`, `motion-primitives`, `fancy-components`, `kokonut-ui`, `analog-ui`, `watermelon-ui`, `style-ui` |
+| Landing-page sections (token-driven) | `saas-blocks` |
+| Signature micro-interactions | `craft-interactions` |
+| Physical / audio-style controls | `tactile-hardware-ui` |
+| More component libraries | `21st-dev`, `motion-primitives`, `fancy-components`, `kokonut-ui`, `watermelon-ui` |
 | Backgrounds, blobs, waves, grain | `haikei-svg` |
 | Landing page structure & copy | `design-genres/taste-landing-page`, `design-genres/taste-ux-copy` |
 
