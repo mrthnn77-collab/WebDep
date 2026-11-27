@@ -29,6 +29,7 @@
 | **Haikei Procedural SVG Suite** | `skills/haikei-svg` | **Haikei (`haikei.app` & `blobmaker.app`)**: Generative mathematical vector engines. Polar-coordinate organic cubic Bézier blobs, multi-layered harmonic wave dividers, fractal grain masks, and blurry gradient mesh backgrounds |
 | **SiteReel Vibe Coding Engine** | `skills/sitereel-vibe` | **SiteReel (`sitereel.ai`)**: Vibe coding prompt architecture & motion-heavy website reel blueprints. 5-layer prompt contracts, kinetic typography, luxury bento layouts, and anti-AI-slop constraints |
 | **21st.dev Design Engineer Suite** | `skills/21st-dev` | **21st.dev (`21st.dev`)**: The npm for Design Engineers. 10,000+ curated React/Tailwind components, CLI tooling (`@21st-dev/cli`), SVG brand logos, and native unified 21st MCP server integration (`https://21st.dev/api/mcp`) |
+| **Replica Skill — App Clone Pipeline** | `skills/replica-skill` | **Jake Schincariol/replica-skill (MIT, 11 skills)**: Clean-room clone of any app's features & flows — recon, architect, design, build, backend, test, diff, brand, entrepreneur (fix what users hate), launch, deploy. Never copies code, logos, copy or content |
 
 ---
 

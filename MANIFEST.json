@@ -1,6 +1,6 @@
 {
   "name": "murathan-skills",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "Universal skill library for web design, reverse-engineering site DNA, DESIGN.md contracts, motion principles, brand remixes, genre engineering, taste engineering, UI-UX Pro Max, 3D & generative art, and mechanical hardware UI",
   "author": "mrthnn77-collab",
   "skills": [
@@ -9,176 +9,467 @@
       "name": "Site DNA Extractor & Reverse-Engineering Engine",
       "path": "skills/site-dna-extractor",
       "description": "Deconstructs, reverse-engineers, and extracts design DNA from any high-end site (MotionSites.ai, Awwwards winners, Stripe, Linear). Pulls gradients, noise masks, 3D heroes, and converts them to DESIGN.md and code",
-      "tags": ["reverse-engineer", "motionsites", "inspection", "extractor", "gradient-mesh", "noise-masks"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "reverse-engineer",
+        "motionsites",
+        "inspection",
+        "extractor",
+        "gradient-mesh",
+        "noise-masks"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "design-md",
       "name": "DESIGN.md & CLAUDE.md Design Contract Architect",
       "path": "skills/design-md",
       "description": "Creates, audits, and enforces DESIGN.md & CLAUDE.md design systems for AI agents (Claude, Cursor, Stitch, Codex). Features decision logic, value-intent-boundary tokens, explicit don'ts, and templates",
-      "tags": ["design-md", "claude-design", "design-system", "tokens", "constraints", "stitch"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "design-md",
+        "claude-design",
+        "design-system",
+        "tokens",
+        "constraints",
+        "stitch"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "motion-principles",
       "name": "Design Motion Principles (kylezantos)",
       "path": "skills/motion-principles",
       "description": "Motion & interaction design engine distilled from Emil Kowalski, Jakub Krehel, and Jhey Tompkins. Includes Create and Audit modes, motion gap analysis, anti-AI-slop quality gate, and live HTML demo reports",
-      "tags": ["motion", "animation", "emil-kowalski", "framer-motion", "micro-interactions", "audit"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "motion",
+        "animation",
+        "emil-kowalski",
+        "framer-motion",
+        "micro-interactions",
+        "audit"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "claude-design",
       "name": "Awesome Claude Design & Remixes",
       "path": "skills/claude-design",
       "description": "Aesthetic families (cinematic, warm, glass, terminal, playful, etc.), hybrid two-brand remixes (Stripe x A24, Linear x Claude, etc.), and production recipes",
-      "tags": ["claude-design", "aesthetic-families", "remixes", "recipes", "hybrid-design"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "claude-design",
+        "aesthetic-families",
+        "remixes",
+        "recipes",
+        "hybrid-design"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "design-systems",
       "name": "Design Systems",
       "path": "skills/design-systems",
       "description": "Brand tokens from 80+ world-class brands (Stripe, Apple, Vercel, Linear, etc.)",
-      "tags": ["design", "tokens", "brand", "typography", "color"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "design",
+        "tokens",
+        "brand",
+        "typography",
+        "color"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "ui-ux-pro-max",
       "name": "UI/UX Pro Max Suite (nextlevelbuilder)",
       "path": "skills/ui-ux-pro-max",
       "description": "Official UI-UX-PRO-MAX search engine, datasets (Google Fonts, Phosphor icons, stacks, color, product heuristics) plus banner, brand, design-system, and ui-styling skills",
-      "tags": ["ui-ux-pro-max", "design-intelligence", "search-engine", "fonts", "icons", "stacks"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "ui-ux-pro-max",
+        "design-intelligence",
+        "search-engine",
+        "fonts",
+        "icons",
+        "stacks"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "design-genres",
       "name": "Design Genres & Craft (madebymustafa)",
       "path": "skills/design-genres",
       "description": "24 Genre packs & craft skills: editorial-minimal, quiet-luxury, dark-tech, cinematic-motion, retro-print, japanese-minimal, brutalist-industrial, neo-brutalism, taste-gsap, etc.",
-      "tags": ["genres", "editorial", "luxury", "dark-tech", "cinematic", "craft", "gsap", "typography"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "genres",
+        "editorial",
+        "luxury",
+        "dark-tech",
+        "cinematic",
+        "craft",
+        "gsap",
+        "typography"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "taste-suite",
       "name": "Taste Suite (Leonxlnx)",
       "path": "skills/taste-suite",
       "description": "Curated taste engineering: taste-skill v2, brandkit, minimalist, soft, brutalist, redesign, image-to-code",
-      "tags": ["taste", "ux", "ui", "minimalist", "brutalist", "soft-ui", "redesign"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "taste",
+        "ux",
+        "ui",
+        "minimalist",
+        "brutalist",
+        "soft-ui",
+        "redesign"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "creative-engine",
       "name": "Creative Engine & Motion",
       "path": "skills/creative-engine",
       "description": "Genjutsu 60fps animations, GSAP, Framer Motion, Tells (anti-AI slop), and motion systems",
-      "tags": ["animation", "gsap", "framer", "css", "motion", "anti-ai-slop"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "animation",
+        "gsap",
+        "framer",
+        "css",
+        "motion",
+        "anti-ai-slop"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "3d-webgl",
       "name": "3D & WebGL",
       "path": "skills/3d-webgl",
       "description": "Three.js, R3F, WebGPU/TSL, custom shaders",
-      "tags": ["3d", "webgl", "threejs", "r3f", "webgpu", "shaders"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "3d",
+        "webgl",
+        "threejs",
+        "r3f",
+        "webgpu",
+        "shaders"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "generative-art",
       "name": "Generative Art",
       "path": "skills/generative-art",
       "description": "Canvas, particle systems, fluid simulations",
-      "tags": ["generative", "canvas", "particles", "fluid", "art"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "generative",
+        "canvas",
+        "particles",
+        "fluid",
+        "art"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "skiper-ui",
       "name": "Skiper UI Un-common Components Suite",
       "path": "skills/skiper-ui",
       "description": "Un-common, micro-interaction-driven React & Next.js components for shadcn/ui, Tailwind CSS, Framer Motion, and GSAP. 37+ registry components including perspective carousels, smooth caret inputs, progressive blur, Apple squircles, and card swipe stacks",
-      "tags": ["skiper-ui", "shadcn", "micro-interactions", "uncommon-components", "framer-motion", "gsap", "springs", "canvas-caret"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "skiper-ui",
+        "shadcn",
+        "micro-interactions",
+        "uncommon-components",
+        "framer-motion",
+        "gsap",
+        "springs",
+        "canvas-caret"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "watermelon-ui",
       "name": "Watermelon UI Full-Stack Platform Suite",
       "path": "skills/watermelon-ui",
       "description": "Production-ready open-source React components, animated micro-interactions, full-page blocks, 29 complete dashboards (ERP, E-commerce, Web3, SaaS), audio/voice scrubbers, and native Watermelon MCP integration for shadcn/ui & Tailwind CSS",
-      "tags": ["watermelon-ui", "dashboards", "audio-waveform", "voice-note", "web3", "uniswap", "blocks", "bento", "mcp-server"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "watermelon-ui",
+        "dashboards",
+        "audio-waveform",
+        "voice-note",
+        "web3",
+        "uniswap",
+        "blocks",
+        "bento",
+        "mcp-server"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "style-ui",
       "name": "StyleUI Handmade Templates & Blocks Suite",
       "path": "skills/style-ui",
       "description": "Handmade, modern landing page templates (Notio AI Voice, Axis SaaS) and modular blocks built on React 19, Next.js 16, Tailwind CSS 4, Motion, and Base UI primitives by Ras Mic & Fabrika team",
-      "tags": ["style-ui", "templates", "react-19", "nextjs-16", "tailwind-v4", "base-ui", "notio", "axis", "falling-pattern", "orbs"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "style-ui",
+        "templates",
+        "react-19",
+        "nextjs-16",
+        "tailwind-v4",
+        "base-ui",
+        "notio",
+        "axis",
+        "falling-pattern",
+        "orbs"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "analog-ui",
       "name": "Analog UI Studio Hyper-Skeuomorphism Suite",
       "path": "skills/analog-ui",
       "description": "Studio Hyper-Skeuomorphic tactile & mechanical hardware controls by TechSquidTV. Dynamic physical lighting engine (useAnalogLighting), machined aluminium dials, studio faders, VU needle meters, LED bar meters, rocker switches, rotary selectors, and hardware chassis panels",
-      "tags": ["analog-ui", "skeuomorphism", "mechanical", "hardware-ui", "lighting-engine", "dials", "faders", "vu-meters", "rocker-switches"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "analog-ui",
+        "skeuomorphism",
+        "mechanical",
+        "hardware-ui",
+        "lighting-engine",
+        "dials",
+        "faders",
+        "vu-meters",
+        "rocker-switches"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "kokonut-ui",
       "name": "Kokonut UI Tactile Hardware & Micro-Interactions Suite",
       "path": "skills/kokonut-ui",
       "description": "Physical & mechanical tactile components by kokonut-labs (kokonutui.com). Spring pull-cords, tactile rocker switches, detent dials, tearable perforated ticket buttons, hold-to-confirm triggers, receipt printer mechanisms, and liquid sliders",
-      "tags": ["kokonut-ui", "tactile", "pull-cord", "switch-button", "detent-dial", "tear-button", "hold-button", "liquid-slider", "micro-interactions"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "kokonut-ui",
+        "tactile",
+        "pull-cord",
+        "switch-button",
+        "detent-dial",
+        "tear-button",
+        "hold-button",
+        "liquid-slider",
+        "micro-interactions"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "fancy-components",
       "name": "Fancy Components Physics & Kinetic Suite",
       "path": "skills/fancy-components",
       "description": "Physics-driven animations and kinetic UI by Daniel Petho (fancycomponents.dev). Rigid-body 2D gravity, magnetic cursor attractors, pluckable elastic harmonic strings, mechanical odometer number tickers, and cipher hover scramblers",
-      "tags": ["fancy-components", "physics", "gravity", "elastic-line", "number-ticker", "scramble-text", "kinetic", "matter-js"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "fancy-components",
+        "physics",
+        "gravity",
+        "elastic-line",
+        "number-ticker",
+        "scramble-text",
+        "kinetic",
+        "matter-js"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "motion-primitives",
       "name": "Motion Primitives Layout Morphing & Gestures Suite",
       "path": "skills/motion-primitives",
       "description": "Polished motion components and micro-interactions by Julien Thibeaut (motion-primitives.com). Morphing dialogs, popovers, dynamic docks, sliding odometer numbers, SVG text morphing, magnetic cursor attractors, border trails, progressive blur, and spotlights",
-      "tags": ["motion-primitives", "morphing-dialog", "dock", "sliding-number", "text-morph", "magnetic", "spotlight", "border-trail"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "motion-primitives",
+        "morphing-dialog",
+        "dock",
+        "sliding-number",
+        "text-morph",
+        "magnetic",
+        "spotlight",
+        "border-trail"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "manus-agent",
       "name": "Manus Autonomous Agent & Multi-Agency Suite",
       "path": "skills/manus-agent",
       "description": "Autonomous agent engineering, multi-agent agency roles (UI Designer, UX Architect, Rapid Prototyper, Reality Checker), perception-planning-action execution loop, browser automation, and high-density telemetry UI components",
-      "tags": ["manus", "openmanus", "autonomous-agent", "execution-loop", "agency-skills", "browser-automation", "telemetry-tree"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "manus",
+        "openmanus",
+        "autonomous-agent",
+        "execution-loop",
+        "agency-skills",
+        "browser-automation",
+        "telemetry-tree"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "haikei-svg",
       "name": "Haikei Procedural SVG & Organic Wave Generator Suite",
       "path": "skills/haikei-svg",
       "description": "Generative mathematical vector geometry engines inspired by haikei.app & blobmaker.app. Polar-coordinate organic cubic Bézier blobs, multi-layered harmonic wave dividers, SVG fractal grain masks, and blurry gradient mesh backgrounds",
-      "tags": ["haikei", "blobmaker", "svg-generator", "organic-blob", "layered-waves", "fractal-grain", "blurry-gradient", "vector-geometry"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "haikei",
+        "blobmaker",
+        "svg-generator",
+        "organic-blob",
+        "layered-waves",
+        "fractal-grain",
+        "blurry-gradient",
+        "vector-geometry"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "sitereel-vibe",
       "name": "SiteReel Vibe Coding & Motion Reel Engine",
       "path": "skills/sitereel-vibe",
       "description": "Vibe coding prompt architecture & motion-heavy website reel blueprints inspired by sitereel.ai. Curated aesthetic contracts, luxury bento layouts, kinetic typography, and anti-AI-slop design constraints for AI builders",
-      "tags": ["sitereel", "vibe-coding", "prompts", "motion-reels", "kinetic-typography", "bento-grids", "anti-slop"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "sitereel",
+        "vibe-coding",
+        "prompts",
+        "motion-reels",
+        "kinetic-typography",
+        "bento-grids",
+        "anti-slop"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
     },
     {
       "id": "21st-dev",
       "name": "21st.dev Design Engineer Registry & MCP Suite",
       "path": "skills/21st-dev",
       "description": "The npm for Design Engineers (21st.dev). 10,000+ curated React, Tailwind CSS, and shadcn-compatible components, brand SVG logo search, CLI tooling (@21st-dev/cli), and native unified 21st MCP server integration",
-      "tags": ["21st-dev", "marketplace", "registry", "shadcn", "magic-mcp", "cli", "logo-search", "design-engineers"],
-      "formats": ["antigravity", "cursor", "codex"]
+      "tags": [
+        "21st-dev",
+        "marketplace",
+        "registry",
+        "shadcn",
+        "magic-mcp",
+        "cli",
+        "logo-search",
+        "design-engineers"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex"
+      ]
+    },
+    {
+      "id": "replica-skill",
+      "name": "Replica Skill — App Clone Pipeline (Jake Schincariol, MIT)",
+      "path": "skills/replica-skill",
+      "description": "11 skills that reverse-engineer, rebuild, test, rebrand and deploy a clean-room clone of any app's features and flows: recon, architect, design, build, backend, test, diff, brand, entrepreneur, launch, deploy. Never copies code, logos, copy or content",
+      "tags": [
+        "replica",
+        "clone",
+        "reverse-engineer",
+        "clean-room",
+        "recon",
+        "launch",
+        "deploy",
+        "entrepreneur"
+      ],
+      "formats": [
+        "antigravity",
+        "cursor",
+        "codex",
+        "claude-code"
+      ],
+      "source": "https://github.com/Jakeschincariol/replica-skill",
+      "license": "MIT"
     }
   ]
 }
