@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+stills/
+*.mp4
+sprite.png
+sprite.json
+!examples/*.mp4

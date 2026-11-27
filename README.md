@@ -30,6 +30,7 @@
 | **SiteReel Vibe Coding Engine** | `skills/sitereel-vibe` | **SiteReel (`sitereel.ai`)**: Vibe coding prompt architecture & motion-heavy website reel blueprints. 5-layer prompt contracts, kinetic typography, luxury bento layouts, and anti-AI-slop constraints |
 | **21st.dev Design Engineer Suite** | `skills/21st-dev` | **21st.dev (`21st.dev`)**: The npm for Design Engineers. 10,000+ curated React/Tailwind components, CLI tooling (`@21st-dev/cli`), SVG brand logos, and native unified 21st MCP server integration (`https://21st.dev/api/mcp`) |
 | **Replica Skill — App Clone Pipeline** | `skills/replica-skill` | **Jake Schincariol/replica-skill (MIT, 11 skills)**: Clean-room clone of any app's features & flows — recon, architect, design, build, backend, test, diff, brand, entrepreneur (fix what users hate), launch, deploy. Never copies code, logos, copy or content |
+| **YouTube Video Kiti** | `skills/youtube-video` | **5 video skill**: lemo-wake (fotoğraf canlandırma, CC BY-NC), animation-styles (39 Remotion stili), ui-redline-walkthrough (önce/sonra tasarım videosu), open-3d-skills (three.js sahne & ürün), rossark-motion-skill (karakter animasyonu). Kaynaklar ve lisanslar klasör README'sinde |
 
 ---
 
